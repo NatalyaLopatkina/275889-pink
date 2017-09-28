@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
+  <title>HTML Academy: Пинк. Главная страница</title>
 </head>
 <body>
 
@@ -28,20 +28,21 @@
     </div>
   </nav>
   <div class="app">
-    <img class="app__app-image" src="http://placehold.it/150x100" width="" height="" alt="Картинка приложения">
+    <img class="app__image" src="http://placehold.it/150x100" width="" height="" alt="Картинка приложения">
     <a class="app__download" href="appdownload.html" download>Скачать приложение</a>
     <div class="platforms">
       <ul class="platforms__list">
         <li class="platforms__item">
-          <img src="http://placehold.it/150x100" width="" height="" alt="Apple">
+          <a href="apple.htm"><img src="http://placehold.it/150x100" width="" height="" alt="Apple"></a>
         </li>
         <li class="platforms__item">
-          <img src="http://placehold.it/150x100" width="" height="" alt="Anrdoid">
+          <a href="android.html"><img src="http://placehold.it/150x100" width="" height="" alt="Anrdoid"></a>
         </li>
         <li class="platforms__item">
-          <img src="http://placehold.it/150x100" width="" height="" alt="Windows">
+          <a href="windows.html"><img src="http://placehold.it/150x100" width="" height="" alt="Windows"></a>
         </li>
         <p class="platforms__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </ul>
     </div>
   </div>
 </header>
@@ -73,6 +74,9 @@
     <img class="offers__image" src="http://placehold.it/150x100" width="" height="" alt="Всем привет!">
   </section>
   <div class="slider-review">
+    <input type="radio" name="slider1" id="slide-review1" checked>
+    <input type="radio" name="slider1" id="slide-review2">
+    <input type="radio" name="slider1" id="slide-review3">
     <ul class="slider-review__list">
       <li class="slider-review__item">
         <p class="slider-review__title">Николай Петров</p>
@@ -93,10 +97,15 @@
         </p>
       </li>
     </ul>
+    <div class="slider-review__controls">
+      <label for="slide-review1"></label>
+      <label for="slide-review2"></label>
+      <label for="slide-review3"></label>
   </div>
-  <div class="slider-table">
-    <ul class="slider-table__list">
-      <li class="slider-table__item">
+  <div class="slider-tariff">
+    <input type="radio" name="slider2" id="slide-tariff1">
+    <input type="radio" name="slider2" id="slide-tariff2" checked>
+    <input type="radio" name="slider2" id="slide-tariff3">
         <table class="slider-table__table">
           <tr>
             <th>Стандарт 3.9USD</th>
@@ -111,40 +120,12 @@
             <td>Комментарии</td>
           </tr>
         </table>
-      </li>
-      <li class="slider-table__item">
-        <table class="slider-table__table">
-          <tr>
-            <th>Стандарт 3.9USD</th>
-          </tr>
-          <tr>
-            <td>Розовый фильтр</td>
-          </tr>
-          <tr>
-            <td>Смайлики</td>
-          </tr>
-          <tr>
-            <td>Комментарии</td>
-          </tr>
-        </table>
-      </li>
-      <li class="slider-table__item">
-        <table class="slider-table__table">
-          <tr>
-            <th>Стандарт 3.9USD</th>
-          </tr>
-          <tr>
-            <td>Розовый фильтр</td>
-          </tr>
-          <tr>
-            <td>Смайлики</td>
-          </tr>
-          <tr>
-            <td>Комментарии</td>
-          </tr>
-        </table>
-      </li>
-    </ul>
+    <div class="slider-table__controls">
+      <label for="slide-tariff1"></label>
+      <label for="slide-tariff2"></label>
+      <label for="slide-tariff3"></label>
+    </div>
+  </div>
   </div>
 </main>
 <footer class="page-footer">
