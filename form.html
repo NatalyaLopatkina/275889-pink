@@ -3,25 +3,26 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк. Форма</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="page-header">
-  <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Пинк">
+  <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
   <nav class="main-nav">
-    <button class="main-nav__button-close" type="button">Закрыть меню</button>
+    <button class="main-nav__button-close" type="button"><img src="img/icon-menu-cross.svg" width="24" height="23"></button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="main.html">Главная</a>
+        <li>
+          <a class="site-list__item" href="main.html">Главная</a>
         </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
+        <li>
+          <a class="site-list__item"href="photo.html">Фотографии</a>
         </li>
-        <li class="site-list__item">
-          <a>Конкурс</a>
+        <li>
+          <a class="site-list__item">Конкурс</a>
         </li>
-        <li class="site-list__item">
-          <a href="htmlacademy.html">Html Academy</a>
+        <li>
+          <a class="site-list__item"href="htmlacademy.html">Html Academy</a>
         </li>
       </ul>
     </div>
@@ -36,7 +37,7 @@
 <h1 class="visually-hidden">Конкурс Пинк</h1>
   <div class="conditions-competition">
     <p class="conditions-competition__text">
-      Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+      Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, запомните
     </p>
   </div>
   <div class="form">
@@ -44,15 +45,15 @@
     <div class="user-data">
     <p class="user-data__text">
       <label for="surname">Фамилия</label>
-      <input class="user-data__surname" id="surname" type="text" name="surname" value="" placeholder="Укажите фамилию*">
+      <input class="user-data__placeholder" id="surname" type="text" name="surname" value="" placeholder="Укажите фамилию*">
     </p>
     <p class="user-data__text">
       <label for="name">Имя</label>
-      <input class="user-data__name" id="name" type="text" name="name" value="" placeholder="Введите ваше имя*">
+      <input class="user-data__placeholder" id="name" type="text" name="name" value="" placeholder="Введите ваше имя*">
     </p>
     <p class="user-data__text">
       <label for="patronymic">Отчество</label>
-      <input class="user-data__patronymic" id="patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
+      <input class="user-data__placeholder" id="patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
     </p>
     </div>
     <div class="achievements">
@@ -89,11 +90,11 @@
     <div class="user-data">
       <p class="user-data__text">
         <label for="phone">Номер телефона</label>
-        <input class="user-data__phone" id="phone" type="text" name="phone" value="" placeholder="Номер, пожалуйста">
+        <input class="user-data__placeholder" id="phone" type="text" name="phone" value="" placeholder="Номер, пожалуйста">
       </p>
       <p class="user-data__text">
         <label for="mail">Адрес почты</label>
-        <input class="user-data__mail" id="mail" type="text" name="mail" value="" placeholder="Введите почту*">
+        <input class="user-data__placeholder" id="mail" type="text" name="mail" value="" placeholder="Введите почту*">
       </p>
     </div>
     <div class="app-platforms">
@@ -114,9 +115,9 @@
       </ul>
     </div>
     <div class="emotions">
-      <input id="emotions" type="textarea" name="emotions" value="" placeholder="Можно прям в красках,
-      не стесняясь в выражениях">
       <label for="emotions">Опишите свои эмоции</label>
+      <input class="emotions__placeholder" id="emotions" type="textarea" name="emotions" value="" placeholder="Можно прям в красках,
+      не стесняясь в выражениях">
     </div>
     <button class="form__button" type="submit">Отправить форму</button>
     <p class="form__text">*- Обязательные поля</p>
@@ -124,26 +125,27 @@
   </div>
 </main>
 <footer class="page-footer">
-  <a class="page-footer__link" href="index.html"><img class="page-footer__logo" src="http://placehold.it/150x100" width="" height="" alt="Логотип Пинк">
+  <a class="page-footer__link" href="index.html">
+    <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Пинк">
   </a>
   <div class="page-footer__social social">
     <ul class="social__list">
       <li class="social__item">
-        <a class="social__link" href="tw.html">Твиттер</a>
+        <a class="social__link" href="tw.html"><img src="img/icon-twitter.svg" width="18" height="14">Твиттер</a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="fb.html">Фейсбук</a>
+        <a class="social__link" href="fb.html"><img src="img/icon-facebook.svg" width="9" height="18">Фейсбук</a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="youtube.html">Ютуб</a>
+        <a class="social__link" href="youtube.html"><img src="img/icon-youtube.svg" width="15" height="13">Ютуб</a>
       </li>
     </ul>
   </div>
   <div class="page-footer__copyright copyright">
-    <b class="copyright-text">Разработано:</b>
-    <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+    <p class="copyright__text">Разработано:</p>
+    <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <img src="img/htmlacademy.svg" width="27" height="34"></a>
   </div>
 </footer>
 </body>
-
 </html>

@@ -3,48 +3,49 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк. Главная страница</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="page-header">
-  <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Пинк">
+  <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
   <nav class="main-nav">
-    <button class="main-nav__button-close" type="button">Закрыть меню</button>
+    <button class="main-nav__button-close" type="button"><img src="img/icon-menu-cross.svg" width="24" height="23"></button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a>Главная</a>
         </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
+        <li>
+          <a class="site-list__item" href="photo.html">Фотографии</a>
         </li>
-        <li class="site-list__item">
-          <a href="competition.html">Конкурс</a>
+        <li>
+          <a class="site-list__item" href="competition.html">Конкурс</a>
         </li>
-        <li class="site-list__item">
-          <a href="htmlacademy.html">Html Academy</a>
+        <li>
+          <a class="site-list__item" href="htmlacademy.html">Html Academy</a>
         </li>
       </ul>
     </div>
   </nav>
   <div class="app">
-    <img class="app__image" src="http://placehold.it/150x100" width="" height="" alt="Картинка приложения">
+    <img class="app__image" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Картинка приложения">
     <a class="app__download" href="appdownload.html" download>Скачать приложение</a>
+  </div>
     <div class="platforms">
       <ul class="platforms__list">
         <li class="platforms__item">
-          <a href="apple.htm"><img src="http://placehold.it/150x100" width="" height="" alt="Apple"></a>
+          <a href="apple.htm"><img src="img/logo-apple.svg" width="47" height="56" alt="Apple"></a>
         </li>
         <li class="platforms__item">
-          <a href="android.html"><img src="http://placehold.it/150x100" width="" height="" alt="Anrdoid"></a>
+          <a href="android.html"><img src="img/logo-android.svg" width="43" height="47" alt="Anrdoid"></a>
         </li>
         <li class="platforms__item">
-          <a href="windows.html"><img src="http://placehold.it/150x100" width="" height="" alt="Windows"></a>
+          <a href="windows.html"><img src="img/logo-microsoft.svg" width="44" height="41" alt="Windows"></a>
         </li>
         <p class="platforms__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </ul>
     </div>
-  </div>
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">Пинк</h1>
@@ -71,12 +72,9 @@
           новых</p>
       </li>
     </ul>
-    <img class="offers__image" src="http://placehold.it/150x100" width="" height="" alt="Всем привет!">
+    <img class="offers__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
   </section>
   <div class="slider-review">
-    <input type="radio" name="slider1" id="slide-review1" checked>
-    <input type="radio" name="slider1" id="slide-review2">
-    <input type="radio" name="slider1" id="slide-review3">
     <ul class="slider-review__list">
       <li class="slider-review__item">
         <p class="slider-review__title">Николай Петров</p>
@@ -97,6 +95,9 @@
         </p>
       </li>
     </ul>
+    <input type="radio" name="slider1" id="slide-review1" checked>
+    <input type="radio" name="slider1" id="slide-review2">
+    <input type="radio" name="slider1" id="slide-review3">
     <div class="slider-review__controls">
       <label for="slide-review1"></label>
       <label for="slide-review2"></label>
@@ -104,23 +105,23 @@
   </div>
   </div>
   <div class="slider-tariff">
+        <table class="slider-tariff__table">
+          <tr class="slider-tariff__tr">
+            <th class="slider-tariff__th">Стандарт 3.9USD</th>
+          </tr>
+          <tr>
+            <td class="slider-tariff__td">Розовый фильтр<img src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
+          </tr>
+          <tr>
+            <td class="slider-tariff__td">Смайлики<img src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
+          </tr>
+          <tr>
+            <td class="slider-tariff__td">Комментарии<img src="img/icon-no.svg" width="27" height="26" alt="Да"></td>
+          </tr>
+        </table>
     <input type="radio" name="slider2" id="slide-tariff1">
     <input type="radio" name="slider2" id="slide-tariff2" checked>
     <input type="radio" name="slider2" id="slide-tariff3">
-        <table class="slider-table__table">
-          <tr>
-            <th>Стандарт 3.9USD</th>
-          </tr>
-          <tr>
-            <td>Розовый фильтр</td>
-          </tr>
-          <tr>
-            <td>Смайлики</td>
-          </tr>
-          <tr>
-            <td>Комментарии</td>
-          </tr>
-        </table>
     <div class="slider-table__controls">
       <label for="slide-tariff1"></label>
       <label for="slide-tariff2"></label>
