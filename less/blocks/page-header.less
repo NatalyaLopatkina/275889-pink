@@ -1,3 +1,21 @@
 .page-header {
   background-color: @blue;
+  padding-top: 20px;
+}
+
+.page-header__logo-image {
+  height: 22px;
+  padding-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    min-width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    min-width: 1200px;
+  }
 }

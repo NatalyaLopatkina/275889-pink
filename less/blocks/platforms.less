@@ -1,14 +1,28 @@
 .platforms {
   background-color: @dark-blue;
+  display: flex;
+  flex-direction: column;
 }
 
 .platforms__list {
   list-style: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
+.platforms__download {
+  margin: 0 auto;
+}
 .platforms__description {
   font-size: 14px;
   font-weight: lighter;
   line-height: 24px;
   color: @white;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
