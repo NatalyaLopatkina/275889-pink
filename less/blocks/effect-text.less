@@ -1,0 +1,40 @@
+.effect-text {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect-text {
+    display: block;
+    width: 310px;
+  }
+
+  .effect-text__title {
+    font-size: 30px;
+    width: 168px;
+    font-weight: bold;
+    color: @black;
+  }
+
+  .effect-text__results {
+    font-size: 14px;
+    font-weight: normal;
+    color: @blue;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .effect-text__link {
+    font-size: 14px;
+    font-weight: normal;
+    color: #d22856;
+    line-height: 24px;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect-text {
+    width: 400px;
+    margin-left: 160px;
+  }
+}

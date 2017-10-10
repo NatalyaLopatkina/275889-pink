@@ -26,3 +26,33 @@
   font-weight: normal;
   color: @blue;
 }
+
+@media (min-width: @tablet-width) {
+  .achievements {
+    order: 3;
+  }
+
+  .achievements__text {
+    margin: 0 auto;
+    width: 360px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .achievements {
+    width: 940px;
+    margin: 0 auto;
+    background: none;
+  }
+
+  .achievements__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .achievements__item {
+    width: 260px;
+  }
+}

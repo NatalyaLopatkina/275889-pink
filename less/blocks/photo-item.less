@@ -27,3 +27,21 @@
   color: @pink;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .photo-item {
+    width: 300px;
+    background-color: @grey;
+  }
+
+  .photo-item--big {
+    background-color: @grey;
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-item--big {
+    width: 1200px;
+  }
+}

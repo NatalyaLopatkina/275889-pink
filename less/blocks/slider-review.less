@@ -23,3 +23,23 @@
   font-weight: normal;
   color: @blue;
 }
+
+@media (min-height: @tablet-width) {
+  .slider-review__description {
+    font-size: 18px;
+  }
+
+  .slider-review {
+    width: 620px;
+  }
+
+  .slider-review__list {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider-review {
+    margin: 0 auto;
+  }
+}

@@ -16,6 +16,7 @@
 .platforms__download {
   margin: 0 auto;
 }
+
 .platforms__description {
   font-size: 14px;
   font-weight: lighter;
@@ -25,4 +26,35 @@
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+}
+
+.platforms__text {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .platforms__text {
+    display: inline;
+    font-family: @family;
+    font-size: 40px;
+    color: @white;
+    padding-left: 20px;
+    width: 247px;
+    text-align: center;
+  }
+
+  .platforms {
+    background-color: transparent;
+    width: 340px;
+  }
+
+  .platforms__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .platforms__description {
+    font-size: 18px;
+    padding-right: 0;
+  }
 }

@@ -7,8 +7,9 @@
 </head>
 <body>
 <header class="page-header">
+  <div class="page-header__wrapper">
   <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-  <button class="page-header__button-open" type="button"><img src="img/icon-menu-burger.svg" width="24" height="23"></button>
+  <button class="page-header__button page-header__button--open" type="button"><img src="img/icon-menu-burger.svg" width="24" height="23"></button>
   <nav class="main-nav">
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
@@ -27,6 +28,7 @@
       </ul>
     </div>
   </nav>
+  </div>
   <div  class="competition">
     <p class="competition__text">
       Конкурс на самое безбашенное путешествие с Пинк
@@ -36,12 +38,14 @@
 <main class="page-main">
 <h1 class="visually-hidden">Конкурс Пинк</h1>
   <div class="conditions-competition">
+    <div class="conditions-competition__wrapper">
     <p class="conditions-competition__text">
-      Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, запомните
-    </p>
+      Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+      <p class="conditions-competition__text-form">Пожалуйста, заполните форму ниже</p>
+    </div>
   </div>
   <div class="form">
-  <form action="" method="post">
+  <form class="form-data" action="" method="post">
     <div class="user-data">
     <p class="user-data__text">
       <label for="surname">Фамилия</label>
@@ -87,15 +91,18 @@
         </li>
       </ul>
     </div>
-    <div class="user-data">
-      <p class="user-data__text">
+    <div class="user-data user-data--contacts">
+      <p class="user-data__contacts">Контактная информация</p>
+      <div class="user-data__wrapper">
+      <p class="user-data__text user-data__text--contacts">
         <label for="phone">Номер телефона</label>
         <input class="user-data__placeholder" id="phone" type="text" name="phone" value="" placeholder="Номер, пожалуйста">
       </p>
-      <p class="user-data__text">
+      <p class="user-data__text user-data__text--contacts">
         <label for="mail">Адрес почты</label>
         <input class="user-data__placeholder" id="mail" type="text" name="mail" value="" placeholder="Введите почту*">
       </p>
+      </div>
     </div>
     <div class="app-platforms">
       <p class="app-platforms__text">С каким приложением путешествовали?</p>
@@ -115,12 +122,10 @@
       </ul>
     </div>
     <div class="emotions">
-      <label for="emotions">Опишите свои эмоции</label>
-      <textarea class="emotions__placeholder" id="emotions" name="emotions" rows="5" placeholder="Можно прям в красках,
-      не стесняясь в выражениях">
-      </textarea>
+      <label for="emotions" class="emotions__text">Опишите свои эмоции</label>
+      <textarea class="emotions__placeholder" id="emotions" name="emotions" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
     </div>
-    <p><button class="form__button" type="submit">Отправить форму</button></p>
+    <p class="form__button"><button type="submit">Отправить форму</button></p>
     <p class="form__text">*- Обязательные поля</p>
   </form>
   </div>

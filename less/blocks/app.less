@@ -2,5 +2,22 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+}
 
+@media (min-width: @tablet-width) {
+  .app {
+    display: flex;
+    background: url("../img/bg-back-mobile@1x.jpg");
+  }
+
+  .app__image {
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app {
+    width: 900px;
+    margin: 0 auto;
+  }
 }

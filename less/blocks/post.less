@@ -18,3 +18,35 @@
   margin: auto;
   margin-bottom: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .post__title {
+    font-size: 18px;
+  }
+
+  .post__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: @grey;
+  }
+
+  .post__buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post__button-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post__wrapper {
+    width: 960px;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+}

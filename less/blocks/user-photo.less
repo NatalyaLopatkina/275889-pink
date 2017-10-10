@@ -8,3 +8,20 @@
   flex-direction: column;
   padding: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .user-photo__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 620px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-photo__list {
+    width: 960px;
+  }
+}

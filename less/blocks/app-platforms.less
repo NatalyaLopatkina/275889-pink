@@ -25,3 +25,23 @@
   font-weight: normal;
   color: @blue;
 }
+
+@media (min-width: @tablet-width) {
+  .app-platforms {
+    order: 1;
+  }
+  .app-platforms__text {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app-platforms {
+    background: none;
+    width: 436px;
+  }
+
+  .app-platforms__list {
+    margin: 0 auto;
+  }
+}

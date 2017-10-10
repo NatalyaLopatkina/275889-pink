@@ -13,3 +13,61 @@
   color: @blue;
   display: block;
 }
+
+.user-data__contacts {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .user-data__placeholder {
+    display: inline;
+    min-width: 525px;
+    margin-left: 10px;
+  }
+
+  .user-data {
+    width: 620px;
+    order: 0;
+  }
+
+  .user-data--contacts {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-data__contacts {
+    display: inline;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+    color: @pink;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+
+  .user-data__text--contacts {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-data__placeholder {
+    width: 340px;
+  }
+
+  .user-data {
+    width: 436px;
+  }
+
+  .user-data--contacts {
+    width: 940px;
+  }
+
+  .user-data__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

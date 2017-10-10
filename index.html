@@ -8,8 +8,9 @@
 <body>
 
 <header class="page-header">
+  <div class="page-header__wrapper">
   <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-  <button class="page-header__button-open" type="button"><img src="img/icon-menu-burger.svg" width="24" height="23"></button>
+  <button class="page-header__button page-header__button--open" type="button"><img src="img/icon-menu-burger.svg" width="24" height="23"></button>
   <nav class="main-nav">
 
       <ul class="main-nav__list site-list">
@@ -27,10 +28,11 @@
         </li>
       </ul>
   </nav>
+  </div>
   <div class="app">
     <img class="app__image" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Картинка приложения">
-  </div>
     <div class="platforms">
+      <p class="platforms__text">Взгляните на жизнь иначе!</p>
       <a class="platforms__download" href="platforms.html" download>Скачать приложение</a>
       <ul class="platforms__list">
         <li class="platforms__item">
@@ -45,6 +47,7 @@
       </ul>
       <p class="platforms__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
+  </div>
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">Пинк</h1>
@@ -71,8 +74,21 @@
           новых</p>
       </li>
     </ul>
+    <div class="offers__image-wrapper">
     <img class="offers__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
+    <img class="offers__image-desktop" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
+    <img class="offers__image-desktop" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
+    </div>
   </section>
+  <div class="app-effect">
+    <img class="app-effect__img" src="http://placehold.it/150x100" width="238" height="278" alt="24 часа">
+    <div class="effect-text">
+      <p class="effect-text__title">Эффект на 24 часа!</p>
+      <p class="effect-text__results">
+        Британские ученые провели исследования и доказали ,что положительный ээфект от использования приложения длится целые сутки!</p>
+      <a class="effect-text__link" href="info.html">Узнать больше об исследовании</a>
+    </div>
+    </div>
   <div class="slider-review">
     <ul class="slider-review__list">
       <li class="slider-review__item">
@@ -130,6 +146,7 @@
   </div>
 </main>
 <footer class="page-footer">
+  <div class="page-footer__wrapper">
   <div class="title">
     <p class="title__text">Остались вопросы?</p>
     <p class="title__text">Свяжитесь с нами!</p>
@@ -138,7 +155,7 @@
     <ul class="contacts__list">
       <li class="contacts__item"><b class="contacts__title">Звоните:</b>
         <p class="contacts__text">+7(812) 555-66-66</p></li>
-      <li class="contacts__item"><b class="contacts__title">Пишите:</b>
+      <li class="contacts__item contacts__item--email"><b class="contacts__title">Пишите:</b>
         <p class="contacts__text">mail@htmlacademy.ru</p></li>
       <li class="contacts__item"><b class="contacts__title">Приезжайте в гости:</b>
         <p class="contacts__text">ул. Большая Конюшенная, 19/8</p></li>
@@ -149,6 +166,7 @@
       93879686904818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvt
       C70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e
       0!3m2!1sru!2sru!4v1506460060997" width="600" height="450" allowfullscreen></iframe>
+  </div>
   </div>
 </footer>
 </body>
