@@ -4,15 +4,17 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк. Главная страница</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 <header class="page-header">
   <div class="page-header__wrapper">
+  <div class="page-header__wrapper-image">
   <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
   <button class="page-header__button page-header__button--open" type="button"><img src="img/icon-menu-burger.svg" width="24" height="23"></button>
+  </div>
   <nav class="main-nav">
-
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a>Главная</a>
@@ -30,7 +32,7 @@
   </nav>
   </div>
   <div class="app">
-    <img class="app__image" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Картинка приложения">
+    <img class="app__image" src="img/iphone-hand-mobile@1x.png" height="314" alt="Картинка приложения">
     <div class="platforms">
       <p class="platforms__text">Взгляните на жизнь иначе!</p>
       <a class="platforms__download" href="platforms.html" download>Скачать приложение</a>
@@ -76,7 +78,7 @@
     </ul>
     <div class="offers__image-wrapper">
     <img class="offers__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
-    <img class="offers__image-desktop" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
+      <img class="offers__image-desktop" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
     <img class="offers__image-desktop" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
     </div>
   </section>
@@ -91,65 +93,71 @@
     </div>
   <div class="slider-review">
     <ul class="slider-review__list">
-      <li class="slider-review__item">
+      <li class="slider-review__item slider-review__first">
         <p class="slider-review__title">Николай Петров</p>
         <p class="slider-review__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на
           привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
         </p>
       </li>
-      <li class="slider-review__item">
+      <li class="slider-review__item slider-review__second">
         <p class="slider-review__title">Николай Петров</p>
         <p class="slider-review__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на
           привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
         </p>
       </li>
-      <li class="slider-review__item">
+      <li class="slider-review__item slider-review__third">
         <p class="slider-review__title">Николай Петров</p>
         <p class="slider-review__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на
           привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
         </p>
       </li>
     </ul>
-    <input type="radio" name="slider1" id="slide-review1" checked>
-    <input type="radio" name="slider1" id="slide-review2">
-    <input type="radio" name="slider1" id="slide-review3">
+    <input type="radio" name="slider1" id="slider-review__first" checked>
+    <input type="radio" name="slider1" id="slider-review__second">
+    <input type="radio" name="slider1" id="slider-review__third">
     <div class="slider-review__controls">
-      <label for="slide-review1"></label>
-      <label for="slide-review2"></label>
-      <label for="slide-review3"></label>
+      <label for="slider-review__first"></label>
+      <label for="slider-review__second"></label>
+      <label for="slider-review__third"></label>
   </div>
   </div>
   <div class="slider-tariff">
         <table class="slider-tariff__table">
           <tr class="slider-tariff__tr">
-            <th class="slider-tariff__th">Стандарт 3.9USD</th>
+            <th class="slider-tariff__th">База 1,99 USD</th>
+            <th class="slider-tariff__th">Стандарт 3.9 USD</th>
+            <th class="slider-tariff__th">Анлим 9,99 USD</th>
           </tr>
           <tr>
-            <td class="slider-tariff__td">Розовый фильтр<img src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
+            <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
+            <td class="slider-tariff__td">Розовый фильтр<img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
+            <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
           </tr>
           <tr>
-            <td class="slider-tariff__td">Смайлики<img src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
+            <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-no.svg" width="27" height="26" alt="Нет"></td>
+            <td class="slider-tariff__td">Смайлики<img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
+            <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
           </tr>
           <tr>
-            <td class="slider-tariff__td">Комментарии<img src="img/icon-no.svg" width="27" height="26" alt="Да"></td>
+            <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-no.svg" width="27" height="26" alt="Нет"></td>
+            <td class="slider-tariff__td">Комментарии<img class="slider-tariff__img" src="img/icon-no.svg" width="27" height="26" alt="Нет"></td>
+            <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
           </tr>
         </table>
     <input type="radio" name="slider2" id="slide-tariff1">
     <input type="radio" name="slider2" id="slide-tariff2" checked>
     <input type="radio" name="slider2" id="slide-tariff3">
-    <div class="slider-table__controls">
+    <div class="slider-tariff__controls">
       <label for="slide-tariff1"></label>
       <label for="slide-tariff2"></label>
       <label for="slide-tariff3"></label>
     </div>
   </div>
-  </div>
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
   <div class="title">
-    <p class="title__text">Остались вопросы?</p>
-    <p class="title__text">Свяжитесь с нами!</p>
+    <p class="title__text">Остались вопросы? Свяжитесь с нами!</p>
   </div>
   <div class="contacts">
     <ul class="contacts__list">
@@ -161,12 +169,12 @@
         <p class="contacts__text">ул. Большая Конюшенная, 19/8</p></li>
     </ul>
   </div>
+  </div>
   <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123825!2d30.320894615902734!3d59.
+    <iframe class="map__link" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123825!2d30.320894615902734!3d59.
       93879686904818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvt
       C70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e
-      0!3m2!1sru!2sru!4v1506460060997" width="600" height="450" allowfullscreen></iframe>
-  </div>
+      0!3m2!1sru!2sru!4v1506460060997" height="450" allowfullscreen></iframe>
   </div>
 </footer>
 </body>

@@ -1,11 +1,25 @@
 .page-header {
   background-color: @blue;
-  padding-top: 20px;
 }
 
 .page-header__logo-image {
   height: 22px;
+}
+
+.page-header__wrapper-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-left: 20px;
+  padding-right: 20px;
+  min-height: 45px;
+  align-items: center;
+  border-bottom: 1px solid @black;
+}
+
+.page-header__button {
+  background: none;
+  border: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -24,6 +38,8 @@
   .page-header__wrapper {
     display: flex;
     justify-content: space-around;
+    width: 940px;
+    margin: 0 auto;
   }
 
   .page-header__button {

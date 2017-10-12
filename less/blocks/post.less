@@ -4,6 +4,8 @@
   font-weight: normal;
   color: @blue;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .post__button-list {
@@ -11,12 +13,81 @@
   display: flex;
   justify-content: space-around;
   padding: 0;
+  margin-top: 24px;
 }
 
 .post__button {
   display: block;
   margin: auto;
   margin-bottom: 20px;
+  border: none;
+  background: none;
+}
+
+.post__button--pink {
+  padding: 15px 90px;
+  border: 2px solid @pink;
+  border-radius: 50px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: @pink;
+}
+
+.post__button--grey {
+  padding: 15px 102px;
+  border: 2px solid @border-grey;
+  border-radius: 50px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: @border-grey;
+}
+
+.post__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: @grey;
+  padding-bottom: 20px;
+}
+
+.post__button-crop {
+  border: 0;
+  background: none;
+}
+
+.post__button-pouring {
+  border: 0;
+  background: none;
+}
+
+.post__button-brightness {
+  border: 0;
+  background: none;
+}
+
+.post__range-filter {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.post__range-filter__scale {
+  width: 240px;
+  height: 2px;
+  background-color: @blue;
+}
+
+.post__range-filter__toggle {
+  width: 10px;
+  height: 10px;
+  background-color: @grey;
+  border-radius: 50%;
+  border: 2px solid @pink;
+  position: absolute;
+  top: -6px;
+  left: 212px;
 }
 
 @media (min-width: @tablet-width) {

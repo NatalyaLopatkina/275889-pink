@@ -4,12 +4,15 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк. Форма</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header class="page-header">
   <div class="page-header__wrapper">
+    <div class="page-header__wrapper-image">
   <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
   <button class="page-header__button page-header__button--open" type="button"><img src="img/icon-menu-burger.svg" width="24" height="23"></button>
+    </div>
   <nav class="main-nav">
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
@@ -66,27 +69,27 @@
       </p>
       <ul class="achievements__list">
         <li class="achievements__item">
-          <input id="selfie" type="checkbox" name="achievements" checked>
+          <input id="selfie" type="checkbox" name="achievements" class="achievements__checkbox" checked>
           <label for="selfie">Сделал селфи с акулой</label>
         </li>
         <li class="achievements__item">
-          <input id="beach" type="checkbox" name="achievements" checked>
+          <input id="beach" type="checkbox" name="achievements" class="achievements__checkbox" checked>
           <label for="beach">Обгорел на пляже</label>
         </li>
         <li class="achievements__item">
-          <input id="Norris" type="checkbox" name="achievements">
+          <input id="Norris" type="checkbox" name="achievements" class="achievements__checkbox">
           <label for="Norris">Видел Чака Норриса</label>
         </li>
         <li class="achievements__item">
-          <input id="souvenirs" type="checkbox" name="achievements">
+          <input id="souvenirs" type="checkbox" name="achievements" class="achievements__checkbox">
           <label for="souvenirs">Накупил сувениров</label>
         </li>
         <li class="achievements__item">
-          <input id="tower" type="checkbox" name="achievements" checked>
+          <input id="tower" type="checkbox" name="achievements" class="achievements__checkbox" checked>
           <label for="tower">Удержал башню</label>
         </li>
         <li class="achievements__item">
-          <input id="hotel" type="checkbox" name="achievements">
+          <input id="hotel" type="checkbox" name="achievements" class="achievements__checkbox">
           <label for="hotel">Разгромил отель</label>
         </li>
       </ul>
@@ -113,7 +116,7 @@
         </li>
         <li class="app-platforms__item">
           <input id="android" type="radio" name="platforms">
-          <label for="iOS">Pink на Android</label>
+          <label for="android">Pink на Android</label>
         </li>
         <li class="app-platforms__item">
           <input id="windows" type="radio" name="platforms">
@@ -125,7 +128,9 @@
       <label for="emotions" class="emotions__text">Опишите свои эмоции</label>
       <textarea class="emotions__placeholder" id="emotions" name="emotions" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
     </div>
-    <p class="form__button"><button type="submit">Отправить форму</button></p>
+    <p class="form__button">
+      <button type="submit" class="form__button-text">Отправить форму
+      </button></p>
     <p class="form__text">*- Обязательные поля</p>
   </form>
   </div>
@@ -137,18 +142,18 @@
   <div class="page-footer__social social">
     <ul class="social__list">
       <li class="social__item">
-        <a class="social__link" href="tw.html"><img src="img/icon-twitter.svg" width="18" height="14">Твиттер</a>
+        <a class="social__link" href="tw.html"><img class="social__img" src="img/icon-twitter.svg" width="18" height="14"></a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="fb.html"><img src="img/icon-facebook.svg" width="9" height="18">Фейсбук</a>
+        <a class="social__link" href="fb.html"><img class="social__img" src="img/icon-facebook.svg" width="9" height="18"></a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="youtube.html"><img src="img/icon-youtube.svg" width="15" height="13">Ютуб</a>
+        <a class="social__link" href="youtube.html"><img class="social__img" src="img/icon-youtube.svg" width="15" height="13"></a>
       </li>
     </ul>
   </div>
   <div class="page-footer__copyright copyright">
-    <p class="copyright__text">Разработано:</p>
+    <p class="copyright__text">Разработано</p>
     <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
       <img src="img/htmlacademy.svg" width="27" height="34"></a>
   </div>

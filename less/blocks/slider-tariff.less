@@ -1,5 +1,15 @@
 .slider-tariff {
   background-color: @grey;
+  overflow: hidden;
+  position: relative;
+  min-height: 438px;
+}
+
+.slider-tariff__table {
+  transform: translateX(-32%);
+  min-width: 880px;
+  position: absolute;
+  top: 46px;
 }
 
 .slider-tariff__th {
@@ -8,6 +18,8 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  width: 274px;
+  height: 97px;
 }
 
 .slider-tariff__td {
@@ -17,4 +29,53 @@
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
+  height: 60px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.slider-tariff__img {
+  position: absolute;
+  top: 18px;
+  right: 19px;
+}
+
+.slider-tariff > input {
+  display: none;
+}
+
+.slider-tariff__controls {
+  position: absolute;
+  top: 370px;
+  left: 100px;
+}
+
+.slider-tariff label {
+  cursor: pointer;
+  display: inline-block;
+  height: 6px;
+  position: relative;
+  width: 6px;
+  margin: 12px;
+  background: @cold-grey;
+  border-radius: 50%;
+}
+
+.slider-tariff label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+}
+
+.slider-review label:hover,
+#slider-review__first:checked ~ .slider-review__controls label:nth-of-type(1),
+#slider-review__second:checked ~ .slider-review__controls label:nth-of-type(2),
+#slider-review__third:checked ~ .slider-review__controls label:nth-of-type(3) {
+  background: @white;
+  width: 6px;
+  height: 6px;
+  border: 3px solid @dark-grey;
 }
