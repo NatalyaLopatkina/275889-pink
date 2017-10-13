@@ -29,6 +29,10 @@
   color: @blue;
 }
 
+.slider-review__profession {
+  display: none;
+}
+
 .slider-review > input {
   display: none;
 }
@@ -79,11 +83,38 @@
   }
 
   .slider-review {
-    width: 620px;
+    min-width: 620px;
   }
 
   .slider-review__list {
     padding: 0;
+  }
+
+  .slider-review__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider-review__profession {
+    display: block;
+    font-size: 12px;
+    line-height: 30px;
+    color: @blue;
+    font-weight: normal;
+    order: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .slider-review__title {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .slider-review__controls {
+    top: 70%;
+    left: 40%;
+    margin-top: 0;
   }
 }
 

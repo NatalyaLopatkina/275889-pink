@@ -62,11 +62,38 @@
   .photo-item {
     width: 300px;
     background-color: @grey;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .photo-item--big {
     background-color: @grey;
     width: 620px;
+  }
+
+  .photo-item__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-item__like {
+    order: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .photo-item__comment {
+    order: 2;
+  }
+
+  .photo-item__image-like {
+    order: 1;
+    margin-left: 20px;
+  }
+
+  .photo-item__image {
+    width: 100%;
   }
 }
 

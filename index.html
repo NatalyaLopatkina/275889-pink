@@ -55,7 +55,7 @@
   <h1 class="visually-hidden">Пинк</h1>
   <div class="title">
     <p class="title__text">Устали от серости мегаполиса?</p>
-    <p class="title__text">Нам есть, что вам предложить!</p>
+    <p class="title__text title__text--offer">Нам есть, что вам предложить!</p>
   </div>
   <section class="offers">
     <h1 class="visually-hidden">Предложения</h1>
@@ -85,9 +85,9 @@
   <div class="app-effect">
     <img class="app-effect__img" src="http://placehold.it/150x100" width="238" height="278" alt="24 часа">
     <div class="effect-text">
-      <p class="effect-text__title">Эффект на 24 часа!</p>
+      <p class="effect-text__title">Эффект<br> на 24 часа!</p>
       <p class="effect-text__results">
-        Британские ученые провели исследования и доказали ,что положительный ээфект от использования приложения длится целые сутки!</p>
+        Британские ученые провели исследования и доказали ,что положительный эффект от использования приложения длится целые сутки!</p>
       <a class="effect-text__link" href="info.html">Узнать больше об исследовании</a>
     </div>
     </div>
@@ -95,6 +95,7 @@
     <ul class="slider-review__list">
       <li class="slider-review__item slider-review__first">
         <p class="slider-review__title">Николай Петров</p>
+        <p class="slider-review__profession">25 лет, водитель трамвая</p>
         <p class="slider-review__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на
           привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
         </p>
@@ -124,23 +125,33 @@
   <div class="slider-tariff">
         <table class="slider-tariff__table">
           <tr class="slider-tariff__tr">
+            <th class="slider-tariff__th-item">&nbsp;</th>
             <th class="slider-tariff__th">База 1,99 USD</th>
             <th class="slider-tariff__th">Стандарт 3.9 USD</th>
             <th class="slider-tariff__th">Анлим 9,99 USD</th>
           </tr>
           <tr>
+            <td class="slider-tariff__td-item">Розовый фильтр</td>
             <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
-            <td class="slider-tariff__td">Розовый фильтр<img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
-            <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
-          </tr>
-          <tr>
-            <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-no.svg" width="27" height="26" alt="Нет"></td>
-            <td class="slider-tariff__td">Смайлики<img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
+            <td class="slider-tariff__td">
+              <span class="slider-tariff__text">Розовый фильтр</span>
+              <img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
             <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
           </tr>
           <tr>
+            <td class="slider-tariff__td-item">Смайлики</td>
             <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-no.svg" width="27" height="26" alt="Нет"></td>
-            <td class="slider-tariff__td">Комментарии<img class="slider-tariff__img" src="img/icon-no.svg" width="27" height="26" alt="Нет"></td>
+            <td class="slider-tariff__td">
+              <span class="slider-tariff__text">Смайлики</span>
+                <img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
+            <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
+          </tr>
+          <tr>
+            <td class="slider-tariff__td-item">Комментарии</td>
+            <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-no.svg" width="27" height="26" alt="Нет"></td>
+            <td class="slider-tariff__td">
+              <span class="slider-tariff__text">Комментарии</span>
+                <img class="slider-tariff__img" src="img/icon-no.svg" width="27" height="26" alt="Нет"></td>
             <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
           </tr>
         </table>
@@ -155,9 +166,9 @@
   </div>
 </main>
 <footer class="page-footer">
-  <div class="page-footer__wrapper">
   <div class="title">
-    <p class="title__text">Остались вопросы? Свяжитесь с нами!</p>
+    <p class="title__text">Остались вопросы?</p>
+    <p class="title__text">Свяжитесь с нами!</p>
   </div>
   <div class="contacts">
     <ul class="contacts__list">
@@ -168,7 +179,6 @@
       <li class="contacts__item"><b class="contacts__title">Приезжайте в гости:</b>
         <p class="contacts__text">ул. Большая Конюшенная, 19/8</p></li>
     </ul>
-  </div>
   </div>
   <div class="map">
     <iframe class="map__link" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123825!2d30.320894615902734!3d59.
