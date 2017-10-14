@@ -32,7 +32,7 @@
 @media (min-width: @tablet-width) {
   .user-data__placeholder {
     display: inline;
-    min-width: 509px;
+    width: 509px;
     margin-left: 10px;
   }
 
@@ -43,7 +43,6 @@
   .user-data {
     width: 620px;
     order: 0;
-    margin: 0 auto;
   }
 
   .user-data--contacts {
@@ -74,11 +73,17 @@
 
 @media (min-width: @desktop-width) {
   .user-data__placeholder {
-    width: 340px;
+    width: 314px;
+    margin-bottom: 29px;
+  }
+
+  .user-data__placeholder--name {
+    width: 353px;
   }
 
   .user-data {
     width: 436px;
+    padding: 0;
   }
 
   .user-data--contacts {
