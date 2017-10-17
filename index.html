@@ -23,7 +23,7 @@
           <a href="photo.html">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a href="competition.html">Конкурс</a>
+          <a href="form.html">Конкурс</a>
         </li>
         <li class="site-list__item">
           <a href="htmlacademy.html">Html Academy</a>
@@ -32,8 +32,10 @@
   </nav>
   </div>
   <div class="app">
+    <div class="app__wrapper">
     <img class="app__image" src="img/iphone-hand-mobile@1x.png" height="314" alt="Картинка приложения">
     <div class="platforms">
+      <div class="platforms__wrapper">
       <p class="platforms__text">Взгляните на жизнь иначе!</p>
       <a class="platforms__download" href="platforms.html" download>Скачать приложение</a>
       <ul class="platforms__list">
@@ -48,16 +50,21 @@
         </li>
       </ul>
       <p class="platforms__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </div>
+  </div>
   </div>
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">Пинк</h1>
   <div class="title">
+    <div class="title__wrapper">
     <p class="title__text">Устали от серости мегаполиса?</p>
     <p class="title__text title__text--offer">Нам есть, что вам предложить!</p>
+    </div>
   </div>
   <section class="offers">
+    <div class="offers__wrapper">
     <h1 class="visually-hidden">Предложения</h1>
     <ul class="offers__list">
       <li class="offers__item">
@@ -72,7 +79,7 @@
       </li>
       <li class="offers__item">
         <p class="offers__title">Заводит новых друзей</p>
-        <p class="offers__description">Ставьте лайки, комментируйте. делитесь фотографиями с друзьями и заводите
+        <p class="offers__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
           новых</p>
       </li>
     </ul>
@@ -81,8 +88,10 @@
       <img class="offers__image-desktop" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
     <img class="offers__image-desktop" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
     </div>
+    </div>
   </section>
   <div class="app-effect">
+    <div class="app-effect__wrapper">
     <img class="app-effect__img" src="http://placehold.it/150x100" width="238" height="278" alt="24 часа">
     <div class="effect-text">
       <p class="effect-text__title">Эффект<br> на 24 часа!</p>
@@ -91,38 +100,45 @@
       <a class="effect-text__link" href="info.html">Узнать больше об исследовании</a>
     </div>
     </div>
+    </div>
   <div class="slider-review">
+    <input type="radio" name="slider1" id="slider-review__first" checked class="slider-review__first">
+    <input type="radio" name="slider1" id="slider-review__second" class="slider-review__second">
+    <input type="radio" name="slider1" id="slider-review__third" class="slider-review__third">
     <ul class="slider-review__list">
-      <li class="slider-review__item slider-review__first">
+      <li class="slider-review__item slider-review__slide1">
         <p class="slider-review__title">Николай Петров</p>
         <p class="slider-review__profession">25 лет, водитель трамвая</p>
         <p class="slider-review__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на
           привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
         </p>
       </li>
-      <li class="slider-review__item slider-review__second">
-        <p class="slider-review__title">Николай Петров</p>
+      <li class="slider-review__item slider-review__slide2">
+        <p class="slider-review__title">Николай geg</p>
         <p class="slider-review__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на
           привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
         </p>
       </li>
-      <li class="slider-review__item slider-review__third">
+      <li class="slider-review__item slider-review__slide3">
         <p class="slider-review__title">Николай Петров</p>
         <p class="slider-review__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на
           привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
         </p>
       </li>
     </ul>
-    <input type="radio" name="slider1" id="slider-review__first" checked>
-    <input type="radio" name="slider1" id="slider-review__second">
-    <input type="radio" name="slider1" id="slider-review__third">
     <div class="slider-review__controls">
+      <div class="slider-review__wrapper">
       <label for="slider-review__first"></label>
       <label for="slider-review__second"></label>
       <label for="slider-review__third"></label>
   </div>
+    </div>
   </div>
   <div class="slider-tariff">
+    <div class="slider-tariff__wrapper">
+      <input type="radio" name="slider2" id="slide-tariff1" class="slide-tariff1">
+      <input type="radio" name="slider2" id="slide-tariff2" checked class="slide-tariff2">
+      <input type="radio" name="slider2" id="slide-tariff3" class="slide-tariff3">
         <table class="slider-tariff__table">
           <tr class="slider-tariff__tr">
             <th class="slider-tariff__th-item">&nbsp;</th>
@@ -155,20 +171,20 @@
             <td class="slider-tariff__td"><img class="slider-tariff__img" src="img/icon-yes.svg" width="31" height="21" alt="Да"></td>
           </tr>
         </table>
-    <input type="radio" name="slider2" id="slide-tariff1">
-    <input type="radio" name="slider2" id="slide-tariff2" checked>
-    <input type="radio" name="slider2" id="slide-tariff3">
     <div class="slider-tariff__controls">
       <label for="slide-tariff1"></label>
       <label for="slide-tariff2"></label>
       <label for="slide-tariff3"></label>
     </div>
+    </div>
   </div>
 </main>
 <footer class="page-footer">
   <div class="title">
+    <div class="title__wrapper">
     <p class="title__text">Остались вопросы?</p>
     <p class="title__text">Свяжитесь с нами!</p>
+    </div>
   </div>
   <div class="contacts">
     <ul class="contacts__list">

@@ -6,10 +6,13 @@
 
 @media (min-width: @tablet-width) {
   .app {
-    display: flex;
     background: url("../img/bg-back-mobile@1x.jpg");
-    padding-left: 20px;
-    padding-right: 20px;
+  }
+
+  .app__wrapper {
+    display: flex;
+    justify-content: space-between;
+    .tablet;
   }
 
   .app__image {
@@ -18,8 +21,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .app {
-    width: 900px;
-    margin: 0 auto;
+  .app__wrapper {
+    .desktop;
   }
 }

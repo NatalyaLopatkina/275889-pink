@@ -1,6 +1,7 @@
 .site-list {
   list-style: none;
   text-align: center;
+  .mobile;
 }
 
 .site-list__item {
@@ -14,6 +15,12 @@
   border-top: 1px solid @dark-grey;
   width: 100%;
   min-height: 59px;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    .tablet;
+  }
 }
 
 @media (min-width: @desktop-width) {

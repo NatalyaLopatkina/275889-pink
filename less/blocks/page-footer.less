@@ -1,9 +1,7 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  .mobile;
 }
 
 .page-footer__link {
@@ -16,6 +14,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    .tablet;
   }
 
   .page-footer__link {
@@ -26,7 +25,6 @@
 
 @media (min-width: @desktop-width) {
   .page-footer__wrapper {
-    padding-left: 130px;
-    padding-right: 130px;
+    .desktop;
   }
 }

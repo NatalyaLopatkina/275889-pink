@@ -4,22 +4,26 @@
 
 @media (min-width: @tablet-width) {
   .app-effect {
+    background: @white;
+    display: block;
+    margin-top: 50px;
+  }
+
+  .app-effect__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    .tablet;
   }
 }
 
 @media (min-width: @desktop-width) {
   .app-effect {
-    width: 940px;
-    margin: 0 auto;
-    justify-content: flex-start;
-    padding-left: 130px;
-    padding-right: 130px;
     background: @grey;
     padding-bottom: 60px;
+  }
+
+  .app-effect__wrapper {
+    justify-content: flex-start;
+    .desktop;
   }
 }

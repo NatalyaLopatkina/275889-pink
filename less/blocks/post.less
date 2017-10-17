@@ -4,8 +4,16 @@
   font-weight: normal;
   color: @blue;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  .mobile;
+}
+
+.post__photo {
+  background: @grey;
+}
+
+.post__wrapper {
+  .mobile;
+  padding-bottom: 20px;
 }
 
 .post__button-list {
@@ -42,13 +50,6 @@
   line-height: 18px;
   font-weight: bold;
   color: @border-grey;
-}
-
-.post__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-  background: @grey;
-  padding-bottom: 20px;
 }
 
 .post__button-crop {
@@ -93,13 +94,18 @@
 @media (min-width: @tablet-width) {
   .post__title {
     font-size: 18px;
+    .tablet;
+  }
+
+  .post__photo {
+    background-color: @grey;
   }
 
   .post__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: @grey;
+    .tablet;
   }
 
   .post__buttons-wrapper {
@@ -198,10 +204,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .post__photo {
+    background: @white;
+  }
+
   .post__wrapper {
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
     justify-content: space-around;
     margin-bottom: 50px;
+    background: @grey;
+    padding: 0;
   }
 }

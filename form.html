@@ -17,7 +17,7 @@
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="main.html">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
           <a href="photo.html">Фотографии</a>
@@ -49,7 +49,9 @@
   </div>
   <div class="form">
   <form class="form-data" action="" method="post">
+    <div class="form-data__wrapper">
     <div class="user-data">
+      <div class="user-data__wrapper">
     <p class="user-data__text">
       <label for="surname">Фамилия</label>
       <input class="user-data__placeholder" id="surname" type="text" name="surname" value="" placeholder="Укажите фамилию*">
@@ -62,8 +64,10 @@
       <label for="patronymic">Отчество</label>
       <input class="user-data__placeholder" id="patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
     </p>
+      </div>
     </div>
     <div class="achievements">
+      <div class="achievements__wrapper">
       <p class="achievements__text">
         Ваши безбашенные достижения в путешествии
       </p>
@@ -93,10 +97,11 @@
           <label for="hotel">Разгромил отель</label>
         </li>
       </ul>
+      </div>
     </div>
     <div class="user-data user-data--contacts">
       <p class="user-data__contacts">Контактная информация</p>
-      <div class="user-data__wrapper">
+      <div class="user-data__wrapper-contacts">
       <p class="user-data__text user-data__text--contacts">
         <label for="phone">Номер телефона</label>
         <input class="user-data__placeholder" id="phone" type="text" name="phone" value="" placeholder="Номер, пожалуйста">
@@ -108,6 +113,7 @@
       </div>
     </div>
     <div class="app-platforms">
+      <div class="app-platforms__wrapper">
       <p class="app-platforms__text">С каким приложением путешествовали?</p>
       <ul class="app-platforms__list">
         <li class="app-platforms__item">
@@ -123,16 +129,20 @@
           <label for="windows">Windows Phone</label>
         </li>
       </ul>
+      </div>
     </div>
     <div class="emotions">
+      <div class="emotions__wrapper">
       <label for="emotions" class="emotions__text">Опишите свои эмоции</label>
       <textarea class="emotions__placeholder" id="emotions" name="emotions" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </div>
     </div>
     <div class="form__wrapper">
     <p class="form__button">
       <button type="submit" class="form__button-text">Отправить форму
       </button></p>
     <p class="form__text">*- Обязательные поля</p>
+    </div>
     </div>
   </form>
   </div>
@@ -158,7 +168,8 @@
   <div class="page-footer__copyright copyright">
     <p class="copyright__text">Разработано:</p>
     <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="img/htmlacademy.svg" width="27" height="34"></a>
+      <img src="img/htmlacademy.svg" width="27" height="34">
+    </a>
   </div>
   </div>
 </footer>

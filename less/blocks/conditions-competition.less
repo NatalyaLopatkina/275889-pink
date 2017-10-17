@@ -1,7 +1,5 @@
 .conditions-competition {
   background-color: @white;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .conditions-competition__text {
@@ -14,6 +12,11 @@
 
 .conditions-competition__text-form {
   display: none;
+}
+
+.conditions-competition__wrapper {
+  .mobile;
+  width: 271px;
 }
 
 @media (min-width: @tablet-width) {
@@ -34,6 +37,10 @@
     margin: 0 auto;
     text-align: center;
   }
+
+  .conditions-competition__wrapper {
+    .tablet;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -45,5 +52,9 @@
 
   .conditions-competition {
     margin-bottom: 74px;
+  }
+
+  .conditions-competition__wrapper {
+    .desktop;
   }
 }

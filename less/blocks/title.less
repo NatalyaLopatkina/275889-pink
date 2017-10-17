@@ -1,7 +1,5 @@
 .title {
   background-color: @white;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
   text-align: center;
   margin-top: 42px;
@@ -15,6 +13,10 @@
   margin-top: 0;
 }
 
+.title__wrapper {
+  .mobile;
+}
+
 @media (min-width: @tablet-width) {
   .title__text {
     font-size: 40px;
@@ -22,9 +24,6 @@
   }
 
   .title {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
     text-align: center;
     margin-top: 42px;
     margin-bottom: 45px;
@@ -34,6 +33,10 @@
     width: 334px;
     text-align: center;
     margin: 0 auto;
+  }
+
+  .title__wrapper {
+    .tablet;
   }
 }
 
@@ -45,5 +48,9 @@
 
   .title__text--offer {
     width: 417px;
+  }
+
+  .title__wrapper {
+    .desktop;
   }
 }

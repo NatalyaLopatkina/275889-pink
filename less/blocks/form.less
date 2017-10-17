@@ -3,11 +3,6 @@
   flex-direction: column;
 }
 
-.form__button {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .form__button-text {
   font-size: 18px;
   line-height: 30px;
@@ -32,6 +27,10 @@
   margin-bottom: 60px;
 }
 
+.form__wrapper {
+  .mobile;
+}
+
 @media (min-width: @tablet-width) {
   .form {
     display: flex;
@@ -46,6 +45,7 @@
     display: flex;
     order: 5;
     justify-content: space-between;
+    .tablet;
   }
 }
 
@@ -63,7 +63,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-width: 940px;
+    .desktop;
   }
 
   .form__text {
