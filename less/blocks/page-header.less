@@ -21,6 +21,22 @@
   border: 0;
 }
 
+.page-header__button--opened {
+  background: url("../img/icon-menu-burger.svg") no-repeat;
+  width: 50px;
+  height: 25px;
+}
+
+.page-header__button--closed {
+  background: url("../img/icon-menu-cross.svg") no-repeat;
+  width: 28px;
+  height: 28px;
+}
+
+.page-header--nojs .page-header__button {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     min-width: 660px;

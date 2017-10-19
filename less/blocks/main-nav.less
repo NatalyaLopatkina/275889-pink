@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+.main-nav--nojs .site-list__item {
+  display: block;
+}
+
 @media (min-width: 320px) {
   .main-nav__list {
     display: flex;
@@ -31,4 +35,11 @@
     margin: 0 auto;
     width: 640px;
   }
+}
+
+@media (max-width: @mobile-tablet-width) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
 }
