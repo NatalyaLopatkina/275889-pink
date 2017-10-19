@@ -7,4 +7,54 @@
   line-height: 30px;
   font-weight: normal;
   color: @blue;
+  text-align: center;
+}
+
+.conditions-competition__text-form {
+  display: none;
+}
+
+.conditions-competition__wrapper {
+  .mobile;
+  width: 271px;
+}
+
+@media (min-width: @tablet-width) {
+  .conditions-competition__text {
+    font-size: 18px;
+    width: 518px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  .conditions-competition__text-form {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+    color: @blue;
+    width: 518px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .conditions-competition__wrapper {
+    .tablet;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .conditions-competition__text {
+    width: 765px;
+    margin: 0 auto;
+    margin-top: 95px;
+  }
+
+  .conditions-competition {
+    margin-bottom: 74px;
+  }
+
+  .conditions-competition__wrapper {
+    .desktop;
+  }
 }

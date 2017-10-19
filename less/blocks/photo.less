@@ -1,10 +1,40 @@
 .photo {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-position: center;
+  display: flex;
+  min-height: 168px;
+  background-position-y: -68px;
 }
 
 .photo__text {
   font-size: 24px;
   font-weight: lighter;
   color: @white;
-  padding-top: 210px;
+  text-align: center;
+  margin-top: 30px;
+  .mobile;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__text {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 70px;
+    .tablet;
+  }
+
+  .photo {
+    min-height: 330px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    min-height: 350px;
+  }
+
+  .photo__text {
+    width: 340px;
+    margin-top: 100px;
+  }
 }

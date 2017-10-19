@@ -4,6 +4,9 @@
 
 .contacts__list {
   list-style: none;
+  flex-direction: column;
+  padding: 0;
+  .mobile;
 }
 
 .contacts__title {
@@ -16,4 +19,37 @@
   font-size: 24px;
   font-weight: normal;
   color: @pink;
+  margin-top: 0;
+}
+
+.contacts__item {
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__list {
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .tablet;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .desktop;
+  }
+
+  .contacts__item--email {
+    order: 1;
+  }
+
+  .contacts__item {
+    width: 250px;
+  }
 }

@@ -1,0 +1,29 @@
+.app-effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .app-effect {
+    background: @white;
+    display: block;
+    margin-top: 50px;
+  }
+
+  .app-effect__wrapper {
+    display: flex;
+    justify-content: space-between;
+    .tablet;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app-effect {
+    background: @grey;
+    padding-bottom: 60px;
+  }
+
+  .app-effect__wrapper {
+    justify-content: flex-start;
+    .desktop;
+  }
+}

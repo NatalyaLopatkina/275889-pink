@@ -3,3 +3,42 @@
   background: @blue;
   color: @white;
 }
+
+.main-nav__list {
+  padding: 0;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
+}
+
+@media (min-width: 320px) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 640px;
+  }
+}
+
+@media (max-width: @mobile-tablet-width) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+}
