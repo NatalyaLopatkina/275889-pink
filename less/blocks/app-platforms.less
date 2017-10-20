@@ -61,41 +61,48 @@ input[type="radio"]:checked + label::before {
   .app-platforms {
     order: 1;
     background: none;
+    margin-bottom: 50px;
   }
 
   .app-platforms__text {
     margin: 0 auto;
+    position: absolute;
+    top: -8px;
+    left: 138px;
+    width: 365px;
+    display: block;
+    background: @white;
   }
 
   .app-platforms__item {
-    margin-left: 58px;
+    margin-left: 38px;
   }
 
   .app-platforms__wrapper {
     .tablet;
+    .border;
+    padding: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .app-platforms {
-    background: @white;
-    padding: 0;
-  }
-
   .app-platforms__list {
     margin: 0 auto;
+    margin-top: 35px;
   }
 
   .app-platforms__item {
-    margin-bottom: 15px;
+    margin-bottom: 38px;
   }
 
   .app-platforms__text {
     margin-bottom: 20px;
+    left: 40px;
   }
 
   .app-platforms__wrapper {
-    width: 470px;
+    width: 436px;
     padding: 0;
+    margin-top: -26px;
   }
 }

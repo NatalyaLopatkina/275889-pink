@@ -8,12 +8,14 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="page-header__wrapper">
+  <div class="page-header__wrapper page-header--nojs">
+    <div class="page-header__wrapper-border">
     <div class="page-header__wrapper-image">
   <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-  <button class="page-header__button page-header__button--open" type="button"><img src="img/icon-menu-burger.svg" width="24" height="23"></button>
+  <button class="page-header__button page-header__button--closed" type="button"></button>
     </div>
-  <nav class="main-nav">
+    </div>
+  <nav class="main-nav main-nav--opened main-nav--nojs">
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -54,7 +56,7 @@
           <img class="photo-item__image--big" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография,
         выложенная пользователем">
         </a>
-          <div class="photo-item__wrapper">
+          <div class="photo-item__wrapper photo-item__wrapper--big">
             <div class="photo-item__wrapper-title">
         <p class="photo-item__name">Анна</p>
         <p class="photo-item__time">(5 минут назад)</p>
@@ -248,5 +250,28 @@
   </div>
   </div>
 </footer>
+<script>
+  var navMain = document.querySelector(".main-nav");
+  var navButton = document.querySelector(".page-header__button");
+  var navWrapper = document.querySelector(".page-header__wrapper");
+
+  navMain.classList.remove("main-nav--nojs");
+  navWrapper.classList.remove("page-header--nojs");
+
+  navButton.addEventListener("click", function () {
+    if (navMain.classList.contains("main-nav--closed")) {
+      navMain.classList.remove("main-nav--closed");
+      navMain.classList.add("main-nav--opened");
+      navButton.classList.remove("page-header__button--opened");
+      navButton.classList.add("page-header__button--closed");
+
+    } else {
+      navMain.classList.add("main-nav--closed");
+      navMain.classList.remove("main-nav--opened");
+      navButton.classList.remove("page-header__button--closed");
+      navButton.classList.add("page-header__button--opened");
+    }
+  });
+</script>
 </body>
 </html>

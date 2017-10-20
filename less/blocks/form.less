@@ -32,13 +32,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form {
-    display: flex;
-    flex-direction: column;
-  }
-
   .form__text {
     vertical-align: middle;
+    padding: 0;
   }
 
   .form__wrapper {
@@ -46,6 +42,11 @@
     order: 5;
     justify-content: space-between;
     .tablet;
+  }
+
+  .form-data__wrapper {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -64,6 +65,7 @@
     flex-direction: row;
     justify-content: space-between;
     .desktop;
+    padding: 0;
   }
 
   .form__text {
