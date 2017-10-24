@@ -5,6 +5,8 @@
   color: @blue;
   text-align: center;
   .mobile;
+  margin-top: 24px;
+  margin-bottom: 41px;
 }
 
 .post__photo {
@@ -22,7 +24,8 @@
   display: flex;
   justify-content: space-around;
   padding: 0;
-  margin-top: 24px;
+  margin-top: 42px;
+  margin-bottom: 30px;
 }
 
 .post__button {
@@ -35,17 +38,18 @@
 
 .post__button--pink {
   padding: 15px 90px;
-  border: 2px solid @pink;
+  border: 3px solid @pink;
   border-radius: 50px;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
   color: @pink;
+  margin-bottom: 12px;
 }
 
 .post__button--grey {
   padding: 15px 102px;
-  border: 2px solid @border-grey;
+  border: 3px solid @border-grey;
   border-radius: 50px;
   font-size: 18px;
   line-height: 18px;
@@ -71,7 +75,7 @@
 .post__range-filter {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 74px;
   position: relative;
 }
 
@@ -96,7 +100,7 @@
   .post__title {
     font-size: 18px;
     .tablet;
-    margin-bottom: 50px;
+    margin-bottom: 76px;
   }
 
   .post__photo {
@@ -108,6 +112,8 @@
     flex-direction: row;
     justify-content: space-between;
     .tablet;
+    padding-top: 50px;
+    padding-bottom: 34px;
   }
 
   .post__buttons-wrapper {
@@ -118,6 +124,8 @@
   .post__button-list {
     display: flex;
     flex-direction: column;
+    margin-top: 8px;
+    margin-bottom: 42px;
   }
 
   .post__range-filter {
@@ -125,9 +133,9 @@
   }
 
   .post__range-filter-crop {
-    padding-left: 20px;
+    padding-left: 22px;
     padding-right: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     position: relative;
     align-self: flex-end;
   }
@@ -150,9 +158,9 @@
   }
 
   .post__range-filter-pouring {
-    padding-left: 20px;
+    padding-left: 22px;
     padding-right: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 62px;
     position: relative;
     align-self: flex-end;
   }
@@ -175,9 +183,9 @@
   }
 
   .post__range-filter-brightness {
-    padding-left: 20px;
+    padding-left: 27px;
     padding-right: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 61px;
     position: relative;
     align-self: flex-end;
   }
@@ -196,16 +204,49 @@
     border: 2px solid @pink;
     position: absolute;
     top: -6px;
-    left: 113px;
+    left: 126px;
   }
 
   .post__item {
     display: flex;
     flex-direction: row;
   }
+
+  .post {
+    margin-top: 53px;
+  }
+
+  .post__image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .post__button-editor {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 46px;
+  }
+
+  .post__button-editor--contrast {
+    width: 17px;
+    height: 17px;
+  }
+
+  .post__button--pink {
+    padding: 15px 80px;
+    margin-bottom: 24px;
+  }
+
+  .post__button--grey {
+    padding: 15px 93px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .post {
+    margin-top: 24px;
+  }
+
   .post__photo {
     background: @white;
   }
@@ -214,8 +255,48 @@
     width: 940px;
     margin: 0 auto;
     justify-content: space-around;
-    margin-bottom: 50px;
     background: @grey;
     padding: 0;
+    padding-top: 55px;
+    padding-bottom: 43px;
+    margin-bottom: 56px;
+  }
+
+  .post__button-editor {
+    width: 44px;
+    height: 44px;
+  }
+
+  .post__range-filter-crop {
+    margin-bottom: 74px;
+  }
+
+  .post__range-filter-pouring {
+    margin-bottom: 78px;
+  }
+
+  .post__range-filter-brightness {
+    margin-bottom: 73px;
+  }
+
+  .post__button-editor--contrast {
+    width: 35px;
+    height: 35px;
+  }
+
+  .post__buttons {
+    display: flex;
+    width: 410px;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .post__button--pink {
+    padding: 15px 50px;
+  }
+
+  .post__button--grey {
+    padding: 15px 63px;
+    margin-top: 0;
   }
 }

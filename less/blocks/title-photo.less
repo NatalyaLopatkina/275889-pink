@@ -8,22 +8,30 @@
   font-weight: normal;
   color: @blue;
   text-align: center;
-  .mobile;
   width: 233px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 0 auto;
+
+}
+
+.title-photo__wrapper {
+  .mobile;
+  margin-top: 47px;
+  margin-bottom: 48px;
 }
 
 @media (min-width: @tablet-width) {
   .title-photo__text {
     font-size: 18px;
-    .tablet;
     width: 445px;
   }
 
   .title-photo {
-    padding-top: 95px;
-    padding-bottom: 80px;
+    padding-top: 90px;
+    padding-bottom: 75px;
+  }
+
+  .title-photo__wrapper {
+    .tablet;
   }
 }
 
@@ -31,5 +39,15 @@
   .title-photo__text {
     width: 575px;
     margin: 0 auto;
+  }
+
+  .title-photo__wrapper {
+    .desktop;
+  }
+
+  .title-photo {
+    padding-top: 27px;
+    padding-bottom: 89px;
+
   }
 }

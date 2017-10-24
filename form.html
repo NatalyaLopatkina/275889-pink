@@ -53,15 +53,15 @@
     <div class="user-data">
       <div class="user-data__wrapper">
     <p class="user-data__text">
-      <label for="surname">Фамилия</label>
+      <label for="surname" class="user-data__surname">Фамилия:</label>
       <input class="user-data__placeholder" id="surname" type="text" name="surname" value="" placeholder="Укажите фамилию*">
     </p>
     <p class="user-data__text">
-      <label for="name">Имя</label>
+      <label for="name" class="user-data__name">Имя:</label>
       <input class="user-data__placeholder user-data__placeholder--name" id="name" type="text" name="name" value="" placeholder="Введите ваше имя*">
     </p>
     <p class="user-data__text">
-      <label for="patronymic">Отчество</label>
+      <label for="patronymic" class="user-data__patronymic">Отчество:</label>
       <input class="user-data__placeholder" id="patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
     </p>
       </div>
@@ -71,6 +71,7 @@
       <p class="achievements__text">
         Ваши безбашенные достижения в путешествии
       </p>
+        <div class="achievements__wrapper-item">
       <ul class="achievements__list">
         <li class="achievements__item achievements__item--selfie">
           <input id="selfie" type="checkbox" name="achievements" class="achievements__checkbox" checked>
@@ -80,9 +81,9 @@
           <input id="beach" type="checkbox" name="achievements" class="achievements__checkbox" checked>
           <label for="beach">Обгорел на пляже</label>
         </li>
-        <li class="achievements__item achievements__item--Norris">
-          <input id="Norris" type="checkbox" name="achievements" class="achievements__checkbox">
-          <label for="Norris">Видел Чака Норриса</label>
+        <li class="achievements__item achievements__item--norris">
+          <input id="norris" type="checkbox" name="achievements" class="achievements__checkbox">
+          <label for="norris">Видел Чака Норриса</label>
         </li>
         <li class="achievements__item achievements__item--souvenirs">
           <input id="souvenirs" type="checkbox" name="achievements" class="achievements__checkbox">
@@ -97,11 +98,13 @@
           <label for="hotel">Разгромил отель</label>
         </li>
       </ul>
+        </div>
       </div>
     </div>
     <div class="user-data user-data--contacts">
       <div class="user-data__wrapper-contacts">
         <p class="user-data__contacts">Контактная информация</p>
+        <div class="user-data__wrapper-contacts-info">
       <p class="user-data__text user-data__text--contacts">
         <label for="phone" class="user-data__contacts-info">Номер телефона</label>
         <input class="user-data__placeholder user-data__placeholder--contacts" id="phone" type="text" name="phone" value="" placeholder="Номер, пожалуйста">
@@ -110,6 +113,7 @@
         <label for="mail" class="user-data__contacts-info">Адрес почты</label>
         <input class="user-data__placeholder user-data__placeholder--contacts" id="mail" type="text" name="mail" value="" placeholder="Введите почту*">
       </p>
+        </div>
       </div>
     </div>
     <div class="app-platforms">
@@ -141,7 +145,7 @@
     <p class="form__button">
       <button type="submit" class="form__button-text">Отправить форму
       </button></p>
-    <p class="form__text">*- Обязательные поля</p>
+      <p class="form__text">*- Обязательные <span class="form__text-fill">для заполнения</span> поля</p>
     </div>
     </div>
   </form>

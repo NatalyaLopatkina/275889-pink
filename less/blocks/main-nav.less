@@ -2,6 +2,9 @@
   font-family: @family;
   background: @blue;
   color: @white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .main-nav__list {
@@ -12,18 +15,11 @@
   display: block;
 }
 
-@media (min-width: 320px) {
-  .main-nav__list {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-}
-
 @media (min-width: @tablet-width) {
   .main-nav__list {
     display: flex;
     margin: 0 auto;
+    flex-direction: column;
   }
 }
 
@@ -34,6 +30,13 @@
     justify-content: space-between;
     margin: 0 auto;
     width: 640px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 

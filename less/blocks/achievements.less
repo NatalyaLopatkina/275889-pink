@@ -3,7 +3,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 62px;
 }
 
 .achievements__text {
@@ -20,6 +20,8 @@
 .achievements__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+  margin-top: 39px;
 }
 
 .achievements__item {
@@ -41,11 +43,11 @@ input[type="checkbox"] {
 input[type="checkbox"] + label::before {
   content: "";
   display: inline-block;
-  width: 38px;
-  height: 38px;
+  width: 35px;
+  height: 35px;
   background: @white;
   border: 2px solid @light-grey;
-  margin-right: 27px;
+  margin-right: 31px;
   vertical-align: middle;
 }
 
@@ -58,6 +60,7 @@ input[type="checkbox"]:checked + label::before {
     order: 3;
     background: none;
     margin-bottom: 20px;
+    padding-top: 16px;
   }
 
   .achievements__text {
@@ -67,19 +70,25 @@ input[type="checkbox"]:checked + label::before {
     position: absolute;
     text-align: center;
     top: -9px;
-    left: 96px;
+    left: 78px;
   }
 
   .achievements__list {
-    margin-left: 40px;
     display: flex;
     flex-direction: column;
+    margin-top: 53px;
+    margin-left: 59px;
+    padding-bottom: 4px;
   }
 
   .achievements__wrapper {
     .tablet;
     .border;
     padding: 0;
+  }
+
+  input[type="checkbox"] + label::before {
+    margin-right: 21px;
   }
 }
 
@@ -93,24 +102,25 @@ input[type="checkbox"]:checked + label::before {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0;
-    margin-top: 45px;
+    margin-top: 53px;
   }
 
   .achievements__item {
     width: 260px;
-    margin-left: 20px;
+    margin-right: -50px;
   }
 
   .achievements__wrapper {
     .desktop;
     padding: 0;
     width: 936px;
+    padding-bottom: 8px;
   }
 
   .achievements__text {
-    left: 259px;
+    left: 235px;
   }
 
   .achievements__item--selfie {
@@ -121,7 +131,7 @@ input[type="checkbox"]:checked + label::before {
     order: 3;
   }
 
-  .achievements__item--Norris {
+  .achievements__item--norris {
     order: 1;
   }
 
@@ -135,5 +145,10 @@ input[type="checkbox"]:checked + label::before {
 
   .achievements__item--hotel {
     order: 5;
+  }
+
+  .achievements__wrapper-item {
+    width: 820px;
+    margin: 0 auto;
   }
 }

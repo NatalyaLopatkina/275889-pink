@@ -4,6 +4,7 @@
   font-weight: normal;
   color: @pink;
   text-transform: uppercase;
+  margin-bottom: 18px;
 }
 
 .user-data__placeholder {
@@ -13,9 +14,10 @@
   color: @blue;
   display: block;
   padding-left: 22px;
-  width: 258px;
+  width: 255px;
   border: @grey-border;
-  height: 60px;
+  height: 56px;
+  margin-top: 5px;
 }
 
 .user-data__contacts {
@@ -32,24 +34,46 @@
 
 .user-data__wrapper-contacts {
   .mobile;
+  margin-top: 32px;
+}
+
+.user-data {
+  margin-top: 20px;
+}
+
+.user-data__surname {
+  padding-left: 24px;
+}
+
+.user-data__name {
+  padding-left: 24px;
+}
+
+.user-data__patronymic {
+  padding-left: 24px;
+}
+
+.user-data__contacts-info {
+  padding-left: 24px;
 }
 
 @media (min-width: @tablet-width) {
   .user-data__placeholder {
     display: inline;
-    width: 508px;
-    margin-left: 10px;
+    width: 496px;
+    margin-left: 19px;
     border: 2px solid @grey;
-    height: 60px;
-    margin-bottom: 50px;
+    height: 58px;
+    margin-bottom: 28px;
   }
 
   .user-data__placeholder--name {
-    width: 548px;
+    width: 537px;
   }
 
   .user-data {
     order: 0;
+    margin-top: 2px;
   }
 
   .user-data--contacts {
@@ -86,8 +110,9 @@
   }
 
   .user-data__placeholder--contacts {
-    width: 500px;
+    width: 475px;
     margin: 0 auto;
+    margin-top: 30px;
   }
 
   .user-data__contacts-info {
@@ -99,12 +124,32 @@
   .user-data__wrapper-contacts {
     .border;
     padding: 0;
+    padding-bottom: 26px;
+  }
+
+  .user-data__surname {
+    padding-left: 0;
+  }
+
+  .user-data__name {
+    padding-left: 0;
+  }
+
+  .user-data__patronymic {
+    padding-left: 0;
+  }
+
+  .user-data__contacts-info {
+    padding-left: 0;
+    margin-top: 9px;
+    margin-left: 81px;
+    margin-bottom: -19px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .user-data__placeholder {
-    width: 314px;
+    width: 312px;
     margin-bottom: 29px;
   }
 
@@ -119,19 +164,40 @@
   }
 
   .user-data__wrapper-contacts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     width: 936px;
     margin: 0 auto;
+    margin-top: -2px;
+    padding-bottom: 0;
   }
 
   .user-data__contacts {
-    left: 322px;
+    left: 332px;
+    top: -18px
   }
 
   .user-data__contacts-info {
     margin: 0;
-    padding-left: 22px;
+    padding-left: 12px;
+    margin-top: -19px;
+  }
+
+  .user-data__text--contacts {
+    margin-top: 11px;
+  }
+
+  .user-data--contacts {
+    margin-bottom: 12px;
+  }
+
+  .user-data__wrapper-contacts-info {
+    display: flex;
+    width: 820px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .user-data__placeholder--contacts {
+    width: 349px;
+    padding-left: 23px;
   }
 }

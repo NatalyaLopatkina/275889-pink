@@ -2,6 +2,7 @@
   background-color: @white;
   position: relative;
   height: 300px;
+  margin-top: -32px;
 }
 
 .slider-review__list {
@@ -45,7 +46,7 @@
 
 .slider-review__controls {
   position: absolute;
-  top: 275px;
+  top: 279px;
   left: 38%;
 }
 
@@ -86,15 +87,25 @@
   z-index: 1;
 }
 
+.slider-review__prev {
+  display: none;
+}
+
+.slider-review__next {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .slider-review__description {
     font-size: 18px;
-    .tablet;
+    width: 620px;
+    margin: 0 auto;
   }
 
   .slider-review__list {
     padding: 0;
-    .tablet;
+    width: 620px;
+    margin: 0 auto;
   }
 
   .slider-review__item {
@@ -104,35 +115,49 @@
 
   .slider-review__profession {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 30px;
     color: @blue;
     font-weight: normal;
     order: 2;
-    margin-top: 0;
+    margin-top: 3px;
     margin-bottom: 0;
   }
 
   .slider-review__title {
+    font-size: 20px;
     order: 1;
+    margin-top: 35px;
     margin-bottom: 0;
   }
 
   .slider-review__controls {
-    top: 70%;
-    left: 48%;
+    top: 213px;
+    left: 274px;
     margin-top: 0;
   }
 
   .slider-review {
-    padding-top: 50px;
+    margin-top: 85px;
+  }
+
+  .slider-review__wrapper {
+    .tablet;
+  }
+
+  .slider-review__prev {
+    display: none;
+  }
+
+  .slider-review__next {
+    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .slider-review {
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 194px;
   }
 
   .slider-review__controls {
@@ -142,5 +167,49 @@
   .slider-review__list {
     .desktop;
     width: 700px;
+  }
+
+  .slider-review__wrapper {
+    width: 748px;
+    padding: 0;
+    position: relative;
+  }
+
+  .slider-review__description {
+    width: 705px;
+  }
+
+  .slider-review__profession {
+    font-size: 19px;
+    margin-left: 33px;
+  }
+
+  .slider-review__title {
+    font-size: 24px;
+    margin-left: 32px;
+  }
+
+  .slider-review__prev {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    background: url(../img/left-arrow.svg) no-repeat;
+    z-index: 20;
+    width: 22px;
+    height: 41px;
+    top: 34px;
+    left: -93px
+  }
+
+  .slider-review__next {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    background: url(../img/right-arrow.svg) no-repeat;
+    width: 22px;
+    height: 41px;
+    z-index: 20px;
+    top: 34px;
+    right: -56px;
   }
 }

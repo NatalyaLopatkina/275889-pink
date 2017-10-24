@@ -6,7 +6,7 @@
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 38px;
   margin-bottom: 48px;
 }
 
@@ -17,13 +17,17 @@
   color: @blue;
   padding-left: 20px;
   text-align: left;
-  width: 260px;
+  width: 256px;
   border: @grey-border;
+  margin-top: 9px;
+  padding-top: 15px;
+  padding-bottom: 32px;
 }
 
 .emotions__text {
   text-align: center;
   margin-bottom: 18px;
+  padding-left: 49px;
 }
 
 .emotions__wrapper {
@@ -33,33 +37,35 @@
 @media (min-width: @tablet-width) {
   .emotions {
     order: 4;
-    margin-top: 50px;
+    margin-top: 45px;
     margin-bottom: 50px;
   }
 
   .emotions__text {
     margin: 0 auto;
     position: absolute;
-    top: -15px;
-    left: 179px;
+    top: -17px;
+    left: 127px;
     width: 260px;
     text-align: center;
     background: white;
   }
 
   .emotions__placeholder {
-    width: 500px;
+    width: 474px;
     border: 2px solid @grey;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 43px;
     margin-bottom: 30px;
-    margin-left: 45px;
+    margin-left: 61px;
+    padding-bottom: 25px;
   }
 
   .emotions__wrapper {
     .tablet;
     .border;
     padding: 0;
+    padding-bottom: 11px;
   }
 }
 
@@ -69,8 +75,11 @@
   }
 
   .emotions__placeholder {
-    width: 820px;
-    margin-top: 30px;
+    width: 796px;
+    margin-top: 43px;
+    padding-left: 19px;
+    margin-left: 57px;
+    height: 84px;
   }
 
   .emotions__wrapper {
@@ -80,6 +89,7 @@
   }
 
   .emotions__text {
-    left: 340px;
+    left: 283px;
+    top: -15px;
   }
 }
