@@ -8,6 +8,7 @@
 }
 
 .user-data__placeholder {
+  font-family: @family;
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
@@ -85,7 +86,7 @@
   }
 
   .user-data__contacts {
-    display: inline;
+    display: block;
     font-size: 14px;
     font-weight: normal;
     line-height: 30px;
@@ -95,9 +96,7 @@
     margin: 0 auto;
     width: 260px;
     background: @white;
-    position: absolute;
-    top: -16px;
-    left: 176px;
+    margin-top: -15px;
   }
 
   .user-data__text--contacts {
@@ -162,11 +161,6 @@
     margin: 0 auto;
     margin-top: -2px;
     padding-bottom: 0;
-  }
-
-  .user-data__contacts {
-    left: 332px;
-    top: -18px;
   }
 
   .user-data__contacts-info {
