@@ -1,14 +1,14 @@
 .site-list {
   list-style: none;
   text-align: center;
-  .mobile;
+  margin: 0;
 }
 
 .site-list__item {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
-  line-height: 59px;
+  line-height: 62px;
   color: @white;
   margin: 0 auto;
   border-bottom: 1px solid @black;
@@ -17,8 +17,12 @@
   min-height: 59px;
 }
 
+.site-list__link {
+  .mobile;
+}
+
 @media (min-width: @tablet-width) {
-  .site-list {
+  .site-list__link {
     .tablet;
   }
 }

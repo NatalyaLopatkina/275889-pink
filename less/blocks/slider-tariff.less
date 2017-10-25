@@ -1,30 +1,53 @@
 .slider-tariff__wrapper {
-  background-color: @grey;
   overflow: hidden;
   position: relative;
   min-height: 438px;
-  width: 320px;
   margin: 0 auto;
 }
 
 .slider-tariff__table {
-  min-width: 880px;
+  min-width: 837px;
   position: absolute;
   top: 46px;
 }
 
 .slider-tariff {
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  margin-top: 84px;
+  margin-bottom: -48px;
+}
+
+.slider-tariff::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: right bottom;
+  transform: skewY(-5deg);
   background: @grey;
 }
+
 
 .slider-tariff__th {
   background-color: @dark-blue;
   color: @white;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
   width: 274px;
   height: 97px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+.slider-tariff__th-cost {
+  font-size: 24px;
+  font-weight: lighter;
+  margin-top: 8px;
+  margin-bottom: 21px;
 }
 
 .slider-tariff__td {
@@ -34,15 +57,15 @@
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
-  height: 60px;
-  padding-left: 20px;
+  height: 56px;
+  padding-left: 24px;
   position: relative;
 }
 
 .slider-tariff__img {
   position: absolute;
-  top: 18px;
-  right: 19px;
+  top: 16px;
+  right: 15px;
 }
 
 .slider-tariff > input {
@@ -51,8 +74,8 @@
 
 .slider-tariff__controls {
   position: absolute;
-  top: 370px;
-  left: 100px;
+  top: 366px;
+  left: 127px;
 }
 
 .slider-tariff label {
@@ -61,7 +84,7 @@
   height: 6px;
   position: relative;
   width: 6px;
-  margin: 12px;
+  margin: 7px;
   background: @cold-grey;
   border-radius: 50%;
 }
@@ -98,7 +121,7 @@
 }
 
 .slide-tariff2:checked ~ .slider-tariff__table {
-  transform: translateX(-32%);
+  transform: translateX(-31%);
 }
 
 .slide-tariff3:checked ~ .slider-tariff__table {
@@ -115,6 +138,7 @@
   }
 
   .slider-tariff__th {
+    font-size: 16px;
     width: 150px;
     height: 80px;
     text-transform: uppercase;
@@ -144,6 +168,29 @@
   .slider-tariff__td {
     height: 50px;
   }
+
+  .slider-tariff {
+    margin: 0;
+    margin-bottom: -45px;
+    min-height: 375px;
+  }
+
+  .slider-tariff__table {
+    padding-top: 47px;
+    min-width: 620px;
+  }
+
+  .slide-tariff2:checked ~ .slider-tariff__table {
+    transform: translateX(0%);
+  }
+
+  .slider-tariff__th-cost {
+    font-size: 18px;
+  }
+
+  .slider-tariff__img {
+    right: 62px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -152,15 +199,33 @@
   }
 
   .slider-tariff__th {
-    width: 237px;
-    height: 100px;
+    width: 230px;
+    height: 96px;
   }
 
   .slider-tariff__td-item {
     width: 215px;
+    font-size: 19px;
+    height: 44px;
+    padding-top: 12px;
   }
 
   .slide-tariff2:checked ~ .slider-tariff__table {
     transform: translateX(0%);
+  }
+
+  .slider-tariff__table {
+    width: 940px;
+    padding-top: 27px;
+  }
+
+  .slider-tariff__img {
+    right: 106px;
+    top: 20px;
+  }
+
+  .slider-tariff__th-cost {
+    font-size: 24px;
+    margin-right: 12px;
   }
 }

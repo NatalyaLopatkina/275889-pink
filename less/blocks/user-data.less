@@ -4,16 +4,21 @@
   font-weight: normal;
   color: @pink;
   text-transform: uppercase;
+  margin-bottom: 18px;
 }
 
 .user-data__placeholder {
+  font-family: @family;
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
   color: @blue;
   display: block;
   padding-left: 22px;
-  width: 258px;
+  width: 255px;
+  border: @grey-border;
+  height: 56px;
+  margin-top: 5px;
 }
 
 .user-data__contacts {
@@ -22,43 +27,76 @@
 
 .user-data--contacts {
   margin-top: 40px;
-  .mobile;
 }
 
 .user-data__wrapper {
   .mobile;
 }
 
+.user-data__wrapper-contacts {
+  .mobile;
+  margin-top: 32px;
+}
+
+.user-data {
+  margin-top: 20px;
+}
+
+.user-data__surname {
+  padding-left: 24px;
+}
+
+.user-data__name {
+  padding-left: 24px;
+}
+
+.user-data__patronymic {
+  padding-left: 24px;
+}
+
+.user-data__contacts-info {
+  padding-left: 24px;
+}
+
 @media (min-width: @tablet-width) {
   .user-data__placeholder {
     display: inline;
-    width: 509px;
-    margin-left: 10px;
+    width: 496px;
+    margin-left: 19px;
+    border: 2px solid @grey;
+    height: 58px;
+    margin-bottom: 28px;
   }
 
   .user-data__placeholder--name {
-    width: 549px;
+    width: 537px;
   }
 
   .user-data {
     order: 0;
+    margin-top: 2px;
   }
 
   .user-data--contacts {
     order: 2;
     display: flex;
     flex-direction: column;
-    .tablet;
+    padding: 0;
+    margin-bottom: 50px;
   }
 
   .user-data__contacts {
-    display: inline;
+    display: block;
     font-size: 14px;
     font-weight: normal;
     line-height: 30px;
     color: @pink;
     text-transform: uppercase;
+    text-align: center;
     margin: 0 auto;
+    width: 260px;
+    background: @white;
+    margin-top: -15px;
   }
 
   .user-data__text--contacts {
@@ -67,13 +105,44 @@
   }
 
   .user-data__wrapper {
-    margin-left: 40px;
+    width: 620px;
+  }
+
+  .user-data__placeholder--contacts {
+    width: 475px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .user-data__contacts-info {
+    padding-left: 0;
+    margin-top: 9px;
+    margin-left: 81px;
+    margin-bottom: -19px;
+  }
+
+  .user-data__wrapper-contacts {
+    .border;
+    padding: 0;
+    padding-bottom: 26px;
+  }
+
+  .user-data__surname {
+    padding-left: 0;
+  }
+
+  .user-data__name {
+    padding-left: 0;
+  }
+
+  .user-data__patronymic {
+    padding-left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .user-data__placeholder {
-    width: 314px;
+    width: 312px;
     margin-bottom: 29px;
   }
 
@@ -82,18 +151,41 @@
   }
 
   .user-data__wrapper {
-    width: 470px;
+    width: 500px;
     padding: 0;
     margin: 0;
   }
 
-  .user-data--contacts {
-    .desktop;
+  .user-data__wrapper-contacts {
+    width: 936px;
+    margin: 0 auto;
+    margin-top: -2px;
+    padding-bottom: 0;
   }
 
-  .user-data__wrapper-contacts {
+  .user-data__contacts-info {
+    margin: 0;
+    padding-left: 12px;
+    margin-top: -19px;
+  }
+
+  .user-data__text--contacts {
+    margin-top: 11px;
+  }
+
+  .user-data--contacts {
+    margin-bottom: 12px;
+  }
+
+  .user-data__wrapper-contacts-info {
     display: flex;
-    flex-direction: row;
+    width: 820px;
     justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .user-data__placeholder--contacts {
+    width: 349px;
+    padding-left: 23px;
   }
 }

@@ -13,13 +13,15 @@
   font-size: 18px;
   font-weight: bold;
   color: @blue;
+  line-height: 22px;
 }
 
 .contacts__text {
   font-size: 24px;
   font-weight: normal;
   color: @pink;
-  margin-top: 0;
+  margin-top: 4px;
+  line-height: 27px;
 }
 
 .contacts__item {
@@ -34,6 +36,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     .tablet;
+
+    .contacts__item {
+      width: 283px;
+    }
   }
 }
 
@@ -51,5 +57,9 @@
 
   .contacts__item {
     width: 250px;
+  }
+
+  .contacts__text {
+    margin-top: 24px;
   }
 }
