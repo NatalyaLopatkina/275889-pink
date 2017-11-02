@@ -12,7 +12,12 @@
     <div class="page-header__wrapper-border">
     <div class="page-header__wrapper-image">
   <a href="index.html" class="page-header__link">
-    <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк"></a>
+    <picture>
+      <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+      <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+    </picture>
+  </a>
   <button class="page-header__button page-header__button--closed" type="button"></button>
     </div>
     </div>
@@ -58,8 +63,12 @@
       <li class="user-photo__item user-photo__item--big">
         <article class="photo-item">
         <a href="#">
-          <img class="photo-item__image--big" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография,
-        выложенная пользователем">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="photo-item__image--big" src="img/panorama-mobile@1x.jpg" alt="Фотография,
+        выложенная пользователем" srcset="img/panorama-mobile@2x.jpg 2x">
+          </picture>
         </a>
           <div class="photo-item__wrapper photo-item__wrapper--big">
             <div class="photo-item__wrapper-title">
@@ -77,8 +86,14 @@
       </li>
       <li class="user-photo__item">
         <article class="photo-item">
-        <a href="#"><img class="photo-item__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография,
-        выложенная пользователем"></a>
+        <a href="#">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+            <img class="photo-item__image" src="img/photo-car-mobile@1x.jpg" alt="Фотография,
+        выложенная пользователем" srcset="img/photo-car-mobile@2x.jpg 2x">
+          </picture>
+        </a>
           <div class="photo-item__wrapper">
             <div class="photo-item__wrapper-title">
         <p class="photo-item__name">Левон</p>
@@ -94,8 +109,14 @@
       </li>
       <li class="user-photo__item">
         <article class="photo-item">
-        <a href="#"><img class="photo-item__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография,
-        выложенная пользователем"></a>
+        <a href="#">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+            <img class="photo-item__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография,
+        выложенная пользователем">
+          </picture>
+        </a>
           <div class="photo-item__wrapper">
             <div class="photo-item__wrapper-title">
         <p class="photo-item__name">Антон</p>
@@ -111,8 +132,14 @@
       </li>
       <li class="user-photo__item">
         <article class="photo-item">
-        <a href="#"><img class="photo-item__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография,
-        выложенная пользователем"></a>
+        <a href="#">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+            <img class="photo-item__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография,
+        выложенная пользователем">
+          </picture>
+        </a>
           <div class="photo-item__wrapper">
             <div class="photo-item__wrapper-title">
         <p class="photo-item__name">Борис</p>
@@ -128,8 +155,14 @@
       </li>
       <li class="user-photo__item">
         <article class="photo-item">
-        <a href="#"><img class="photo-item__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография,
-        выложенная пользователем"></a>
+        <a href="#">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+            <img class="photo-item__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография,
+        выложенная пользователем">
+          </picture>
+        </a>
           <div class="photo-item__wrapper">
             <div class="photo-item__wrapper-title">
         <p class="photo-item__name">Сергей</p>
@@ -145,8 +178,14 @@
       </li>
       <li class="user-photo__item">
         <article class="photo-item ">
-        <a href="#"><img class="photo-item__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография,
-        выложенная пользователем"></a>
+        <a href="#">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+            <img class="photo-item__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография,
+        выложенная пользователем">
+          </picture>
+        </a>
           <div class="photo-item__wrapper">
             <div class="photo-item__wrapper-title">
         <p class="photo-item__name">Максим</p>
@@ -162,8 +201,14 @@
       </li>
       <li class="user-photo__item">
         <article class="photo-item">
-        <a href="#"><img class="photo-item__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография,
-        выложенная пользователем"></a>
+        <a href="#">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+            <img class="photo-item__image" src="img/photo-wing-mobile@1x.jpg"srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография,
+        выложенная пользователем">
+          </picture>
+        </a>
           <div class="photo-item__wrapper">
             <div class="photo-item__wrapper-title">
         <p class="photo-item__name">Надежда</p>
@@ -186,7 +231,11 @@
     </p>
       <div class="post__photo">
       <div class="post__wrapper">
-    <img class="post__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Загруженное изображение">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+          <img class="post__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загруженное изображение">
+        </picture>
         <div class="post__buttons-wrapper">
     <ul class="post__button-list">
       <li class="post__item">
