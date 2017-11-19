@@ -41,6 +41,7 @@
   font-size: 18px;
   font-weight: bold;
   vertical-align: bottom;
+  position: relative;
 }
 
 .slider-tariff__th-cost {
@@ -126,6 +127,12 @@
 
 .slide-tariff3:checked ~ .slider-tariff__table {
   transform: translateX(-65%);
+}
+
+.slider-tariff__img-hit {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media (min-width: @tablet-width) {

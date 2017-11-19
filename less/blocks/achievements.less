@@ -52,7 +52,10 @@ input[type="checkbox"] + label::before {
 }
 
 input[type="checkbox"]:checked + label::before {
-  background: url("../img/icon-yes.svg") no-repeat 8px 8px;
+  background: @white;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
 }
 
 @media (min-width: @tablet-width) {

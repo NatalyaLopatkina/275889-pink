@@ -37,6 +37,18 @@
   display: none;
 }
 
+.form__button-text:hover {
+  background: @dark-green;
+}
+
+.form__button-text:active {
+  opacity: 0.3;
+}
+
+.form__button-text:invalid {
+  background: @light-grey;
+}
+
 @media (min-width: @tablet-width) {
   .form__text {
     vertical-align: middle;

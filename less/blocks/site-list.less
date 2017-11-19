@@ -21,6 +21,14 @@
   .mobile;
 }
 
+.site-list__link:hover {
+  color: @pink;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .site-list__link {
     .tablet;
@@ -32,5 +40,21 @@
     text-transform: none;
     font-weight: normal;
     border: none;
+  }
+
+  .site-list__link:hover {
+    color: @pink;
+  }
+
+  .site-list__link:active {
+    color: @white;
+    opacity: 0.3;
+  }
+
+  .site-list__link--photo,
+  .site-list__link--competition,
+  .site-list__link--index {
+    padding: 0;
+    border-bottom: 2px solid @white;
   }
 }
