@@ -18,7 +18,7 @@
   line-height: 30px;
   font-weight: bold;
   color: @black;
-  margin-top: 31px;
+  margin-top: 39px;
   margin-bottom: 14px;
 }
 
@@ -27,7 +27,8 @@
   line-height: 30px;
   font-weight: normal;
   color: @blue;
-  width: 280px;
+  width: 277px;
+  letter-spacing: 0.28px;
 }
 
 .slider-review__profession {
@@ -46,8 +47,13 @@
 
 .slider-review__controls {
   position: absolute;
-  top: 279px;
-  left: 38%;
+  top: 285px;
+  width: 100%;
+}
+
+.slider-review__wrapper-controls {
+  width: 80px;
+  margin: auto;
 }
 
 .slider-review label {
@@ -62,7 +68,7 @@
 }
 
 .slider-review label:hover {
-  background: redss;
+  background: red;
 }
 
 .slider-review label::after {
@@ -81,6 +87,7 @@
   width: 6px;
   height: 6px;
   border: 3px solid @dark-grey;
+  top: 3px;
 }
 
 .slider-review__first:checked ~ .slider-review__list > .slider-review__slide1,
@@ -103,6 +110,7 @@
     font-size: 18px;
     width: 620px;
     margin: 0 auto;
+    letter-spacing: 0.35px;
   }
 
   .slider-review__list {
@@ -125,23 +133,24 @@
     order: 2;
     margin-top: 3px;
     margin-bottom: 0;
+    letter-spacing: 0.3px;
   }
 
   .slider-review__title {
     font-size: 20px;
     order: 1;
     margin-top: 35px;
-    margin-bottom: 0;
+    margin-bottom: -1px;
   }
 
   .slider-review__controls {
-    top: 213px;
-    left: 274px;
+    top: 210px;
     margin-top: 0;
   }
 
   .slider-review {
-    margin-top: 85px;
+    margin-top: 87px;
+    height: 250px;
   }
 
   .slider-review__wrapper {
@@ -155,12 +164,17 @@
   .slider-review__next {
     display: none;
   }
+
+  .slider-review__wrapper-controls {
+    width: 115px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .slider-review {
     margin: 0 auto;
-    padding-top: 194px;
+    padding-top: 48px;
+    height: 236px;
   }
 
   .slider-review__controls {
@@ -179,17 +193,17 @@
   }
 
   .slider-review__description {
-    width: 705px;
+    width: 701px;
+    letter-spacing: 0.4px;
+    line-height: 31px;
   }
 
   .slider-review__profession {
-    font-size: 19px;
-    margin-left: 33px;
+    font-size: 18px;
   }
 
   .slider-review__title {
     font-size: 24px;
-    margin-left: 32px;
   }
 
   .slider-review__prev {
@@ -200,8 +214,8 @@
     z-index: 20;
     width: 22px;
     height: 41px;
-    top: 34px;
-    left: -93px;
+    top: 28px;
+    left: -95px;
   }
 
   .slider-review__next {
@@ -211,8 +225,13 @@
     background: url("../img/right-arrow.svg") no-repeat;
     width: 22px;
     height: 41px;
-    z-index: 20px;
-    top: 34px;
-    right: -56px;
+    z-index: 20;
+    top: 28px;
+    right: -97px;
   }
+
+  .slider-review__quotes {
+    display: none;
+  }
+
 }

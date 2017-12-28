@@ -3,8 +3,9 @@
   line-height: 24px;
   font-weight: bold;
   color: @blue;
-  margin-right: 5px;
+  margin-right: 4px;
   margin-bottom: 0;
+  margin-left: -3px;
 }
 
 .photo-item__time {
@@ -22,8 +23,10 @@
   line-height: 24px;
   font-weight: normal;
   color: @blue;
-  margin-top: 0;
+  margin-top: -1px;
   margin-bottom: 10px;
+  margin-left: -2px;
+  letter-spacing: 0.25px;
 }
 
 .photo-item__like {
@@ -33,24 +36,23 @@
   color: @pink;
   text-transform: uppercase;
   margin: 0;
-  margin-top: auto;
+  margin-left: -2px;
+  letter-spacing: 0.3px;
 }
 
 .photo-item__wrapper {
   .mobile;
   width: 260px;
-  padding-bottom: 19px;
+  padding-bottom: 21px;
 }
 
 .photo-item__wrapper-title {
   display: flex;
   flex-direction: row;
-  margin-bottom: 0;
-  margin-top: 1px;
 }
 
 .photo-item__image-like {
-  margin-right: 10px;
+  margin-right: 15px;
   vertical-align: baseline;
 }
 
@@ -67,6 +69,22 @@
 
 .photo-item {
   background: @grey;
+  position: relative;
+}
+
+.photo-item__panorama {
+  display: inline-block;
+  background: @pink;
+  font-size: 12px;
+  color: @white;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: -12px;
+  right: 0;
+  padding: 7px 20px;
+  padding-top: 4px;
 }
 
 @media (min-width: @tablet-width) {
@@ -77,21 +95,63 @@
   .photo-item__wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 155px;
+    min-height: 117px;
     padding-bottom: 0;
   }
 
   .photo-item__like {
     display: flex;
     align-items: center;
+    flex-direction: row;
+    width: 256px;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    margin-left: 6px;
   }
 
   .photo-item__wrapper--big {
     width: 620px;
+    position: relative;
   }
 
   .photo-item__wrapper-title {
-    margin-top: 7px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+  .photo-item__panorama {
+    top: 16px;
+  }
+
+  .photo-item__like--big {
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    width: 119px;
+  }
+
+  .photo-item__comment {
+    width: 509px;
+    margin-left: 8px;
+  }
+
+  .photo-item__image-like--big {
+    order: 2;
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+  .photo-item__image-like {
+    order: 2;
+  }
+
+  .photo-item__comment--small {
+    width: 239px;
+  }
+
+  .photo-item__wrapper--small {
+    min-height: 151px;
+    justify-content: space-between;
   }
 }
 

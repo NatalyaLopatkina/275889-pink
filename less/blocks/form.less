@@ -14,19 +14,21 @@
   border-radius: 3px;
   padding: 17px 48px;
   margin-top: -11px;
-  margin-bottom: 19px;
+  margin-bottom: 16px;
 }
 
 .form__text {
-  padding-left: 20px;
+  padding-left: 16px;
   padding-right: 20px;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
-  color: #283645;
+  color: @blue;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+  letter-spacing: 0.3px;
+  margin-top: 18px;
 }
 
 .form__wrapper {
@@ -49,6 +51,10 @@
   background: @light-grey;
 }
 
+.form__text-asterisk {
+  color: @pink;
+}
+
 @media (min-width: @tablet-width) {
   .form__text {
     vertical-align: middle;
@@ -62,6 +68,7 @@
     order: 5;
     justify-content: space-between;
     .tablet;
+    margin-bottom: 16px;
   }
 
   .form-data__wrapper {

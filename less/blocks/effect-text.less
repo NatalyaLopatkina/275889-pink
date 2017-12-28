@@ -24,7 +24,9 @@
     color: @blue;
     line-height: 24px;
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
+    width: 305px;
+    letter-spacing: 0.3px;
   }
 
   .effect-text__link {
@@ -33,20 +35,28 @@
     color: #d22856;
     line-height: 24px;
     text-decoration: underline;
+    letter-spacing: 0.25px;
+  }
+
+  .effect-text__results-br1 {
+    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .effect-text {
     width: 530px;
-    margin-left: 123px;
-    margin-top: -3px;
+    margin-left: -22px;
+    margin-top: 106px;
   }
 
   .effect-text__results {
-    font-size: 19px;
-    line-height: 28px;
-    margin-bottom: 37px;
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 35px;
+    width: 562px;
+    letter-spacing: 0.4px;
+
   }
 
   .effect-text__title {
@@ -57,4 +67,17 @@
   .effect-text__link {
     font-size: 18px;
   }
+
+  .effect-text__results-br2 {
+    display: none;
+  }
+
+  .effect-text__results-br1 {
+    display: inline;
+  }
+
+  .effect-text__title-br {
+    display: none;
+  }
+
 }

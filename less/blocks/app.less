@@ -2,17 +2,23 @@
   min-height: 395px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
   position: relative;
+  background-position-y: -72px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: cover;
+    background-size: 700px auto;
   }
 }
 
 .app__image {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  bottom: 0px;
+}
+
+.app__wrapper-background {
+  width: 300px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -24,35 +30,45 @@
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: 1200px auto;
       background-position: center;
-    }
-
-    .app__wrapper {
-      display: flex;
-      justify-content: space-between;
-      .tablet;
-    }
-
-    .app__image {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: auto;
+      background-position-y: -112px;
     }
   }
 
-  @media (min-width: @desktop-width) {
-    .app__wrapper {
-      .desktop;
-    }
+  .app__background {
+    background: none;
+  }
 
-    .app__background {
-      background: url("../img/bg-back-desktop@1x.jpg");
-      background-position: center;
+  .app__wrapper {
+    display: flex;
+    justify-content: space-between;
+    .tablet;
+  }
 
-      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/bg-back-desktop@2x.jpg");
-        background-size: 5120px auto;
-      }
+  .app__image {
+    position: absolute;
+    right: -6px;
+    bottom: 1px;
+    left: auto;
+    margin-right: -35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app__wrapper {
+    .desktop;
+  }
+
+  .app {
+    background: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
     }
+  }
+
+  .app__image {
+    margin-right: -121px;
   }
 }

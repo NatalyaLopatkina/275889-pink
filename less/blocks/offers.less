@@ -15,7 +15,7 @@
   padding: 0;
   margin: 0;
   text-align: center;
-  padding-top: 37px;
+  padding-top: 53px;
   .mobile;
 }
 
@@ -27,7 +27,7 @@
   z-index: -1;
   bottom: 0;
   transform-origin: right;
-  transform: skewY(-5deg);
+  transform: skewY(-6deg);
   background: @grey;
 }
 
@@ -36,8 +36,8 @@
   line-height: 30px;
   font-weight: bold;
   color: @black;
-  margin-top: 9px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 8px;
 }
 
 .offers__description {
@@ -45,15 +45,15 @@
   font-weight: normal;
   color: @blue;
   margin: 0;
-  line-height: 23px;
-  margin-bottom: 21px;
-  width: 252px;
-  padding-left: 10px;
+  line-height: 24px;
+  margin-bottom: 19px;
+  width: 279px;
+  letter-spacing: 0.35px;
 }
 
 .offers__image {
   margin: 0 auto;
-  margin-top: 21px;
+  margin-top: 20px;
   display: block;
 }
 
@@ -62,6 +62,10 @@
 }
 
 .offers__image-desktop2 {
+  display: none;
+}
+
+.offers__description__br {
   display: none;
 }
 
@@ -94,7 +98,9 @@
 
   .offers__description {
     padding: 0;
-    width: 294px;
+    width: 310px;
+    letter-spacing: 0.4px;
+    margin-bottom: 17px;
   }
 
   .offers {
@@ -102,7 +108,20 @@
   }
 
   .offers__item {
-    margin-bottom: 2px;
+    margin-bottom: 3px;
+  }
+
+  .offers::after {
+    height: 90%;
+    transform: skewY(-4deg);
+  }
+
+  .offers__title {
+    margin-bottom: 10px;
+  }
+
+  .offers__description__br {
+    display: inline;
   }
 }
 
@@ -116,20 +135,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 940px;
+    width: 957px;
     margin: 0 auto;
     padding: 0;
-    margin-top: 29px;
+    margin-top: 45px;
   }
 
   .offers__image-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    width: 940px;
+    justify-content: space-between;
   }
 
   .offers__item {
-    width: 240px;
+    width: 242px;
   }
 
   .offers__title {
@@ -140,17 +160,26 @@
 
   .offers__description {
     text-align: center;
-    width: 229px;
+    width: 239px;
     font-size: 18px;
-    padding-top: 15px;
-    line-height: 29px;
+    padding-top: 17px;
+    line-height: 30px;
+    margin-left: -7px;
+    letter-spacing: 0.45px;
   }
 
   .offers__wrapper {
     display: flex;
     flex-direction: column;
-    padding-bottom: 60px;
     .desktop;
-    padding-top: 63px;
+    padding-top: 81px;
+  }
+
+  .offers::after {
+    height: 87%;
+  }
+
+  .offers__description__br {
+    display: none;
   }
 }

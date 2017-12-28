@@ -5,6 +5,7 @@
   <title>HTML Academy: Пинк. Форма</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/picturefill.min.js"></script>
 </head>
 <body>
 <header class="page-header">
@@ -15,7 +16,7 @@
         <picture>
           <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Пинк">
         </picture>
         </a>
   <button class="page-header__button page-header__button--closed" type="button"></button>
@@ -60,15 +61,15 @@
       <div class="user-data__wrapper">
     <p class="user-data__text">
       <label for="surname" class="user-data__surname">Фамилия:</label>
-      <input class="user-data__placeholder" id="surname" type="text" name="surname" value="" placeholder="Укажите фамилию*">
+      <input class="user-data__placeholder" id="surname" type="text" name="surname" value="" placeholder="Укажите фамилию *">
     </p>
     <p class="user-data__text">
       <label for="name" class="user-data__name">Имя:</label>
-      <input class="user-data__placeholder user-data__placeholder--name" id="name" type="text" name="name" value="" placeholder="Введите ваше имя*">
+      <input class="user-data__placeholder user-data__placeholder--name" id="name" type="text" name="name" value="" placeholder="Введите ваше имя *">
     </p>
     <p class="user-data__text">
       <label for="patronymic" class="user-data__patronymic">Отчество:</label>
-      <input class="user-data__placeholder" id="patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
+      <input class="user-data__placeholder user-data__placeholder--patronymic" id="patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
     </p>
       </div>
     </div>
@@ -117,7 +118,7 @@
       </p>
       <p class="user-data__text user-data__text--contacts">
         <label for="mail" class="user-data__contacts-info">Адрес почты</label>
-        <input class="user-data__placeholder user-data__placeholder--contacts" id="mail" type="text" name="mail" value="" placeholder="Введите почту*">
+        <input class="user-data__placeholder user-data__placeholder--contacts" id="mail" type="text" name="mail" value="" placeholder="Введите почту *">
       </p>
         </div>
       </div>
@@ -151,7 +152,7 @@
     <p class="form__button">
       <button type="submit" class="form__button-text">Отправить форму
       </button></p>
-      <p class="form__text">*- Обязательные <span class="form__text-fill">для заполнения</span> поля</p>
+      <p class="form__text"><span class="form__text-asterisk">&#9913; </span>&mdash; Обязательные <span class="form__text-fill">для заполнения</span> поля</p>
     </div>
     </div>
   </form>
@@ -178,7 +179,7 @@
   <div class="page-footer__copyright copyright">
     <p class="copyright__text">Разработано:</p>
     <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="img/htmlacademy.svg" width="27" height="34">
+      <img class="copyright__img" src="img/htmlacademy.svg" width="42" height="42">
     </a>
   </div>
   </div>

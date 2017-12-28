@@ -8,7 +8,7 @@
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
-  line-height: 62px;
+  line-height: 63px;
   color: @white;
   margin: 0 auto;
   border-bottom: 1px solid @black;
@@ -19,6 +19,7 @@
 
 .site-list__link {
   .mobile;
+  padding-right: 24px;
 }
 
 .site-list__link:hover {
@@ -40,6 +41,9 @@
     text-transform: none;
     font-weight: normal;
     border: none;
+    width: 131px;
+    margin: 0;
+    letter-spacing: 0.3px;
   }
 
   .site-list__link:hover {
@@ -56,5 +60,18 @@
   .site-list__link--index {
     padding: 0;
     border-bottom: 2px solid @white;
+  }
+
+  .site-list__link {
+    padding: 0;
+    margin-right: 7px;
+  }
+
+  .site-list__link--academy {
+    margin-right: 0;
+  }
+
+  .site-list__link--index {
+    margin-right: 0;
   }
 }
