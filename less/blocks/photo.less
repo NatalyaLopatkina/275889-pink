@@ -49,25 +49,18 @@
 }
 
 @media (min-width: @desktop-width) {
-  .photo {
-    min-height: 350px;
-    background: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 2560px auto;
-      background-position: -11px;
-    }
-  }
-
   .photo__text {
-    width: 340px;
+    width: 358px;
     margin: 0 auto;
   }
 
   .photo__wrapper {
     .desktop;
     margin-top: 67px;
+  }
+
+  .photo {
+    background: none;
+    min-height: 285px;
   }
 }

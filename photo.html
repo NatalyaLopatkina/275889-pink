@@ -9,37 +9,39 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="page-header__wrapper page-header--nojs">
-    <div class="page-header__wrapper-border">
-    <div class="page-header__wrapper-image">
-  <a href="index.html" class="page-header__link">
-    <picture>
-      <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-      <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Пинк">
-    </picture>
-  </a>
-  <button class="page-header__button page-header__button--closed" type="button"></button>
+  <div class="page-header__background">
+    <div class="page-header__wrapper page-header--nojs">
+      <div class="page-header__wrapper-border">
+        <div class="page-header__wrapper-image">
+          <a href="index.html" class="page-header__link">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Пинк">
+            </picture>
+          </a>
+          <button class="page-header__button page-header__button--closed" type="button"></button>
+        </div>
+      </div>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--photo">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--academy" href="htmlacademy.html">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    </div>
-  <nav class="main-nav main-nav--opened main-nav--nojs">
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--photo">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="htmlacademy.html">Html Academy</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
   </div>
   <div  class="photo">
     <div class="photo__wrapper">
@@ -257,7 +259,7 @@
             <div class="post__buttons-wrapper-list">
               <ul class="post__button-list">
                 <li class="post__item">
-                  <button class="post__button-crop"><img src="img/icon-editor-crop.svg" alt="Обрезать" class="post__button-editor"></button>
+                  <button class="post__button-crop"><img src="img/icon-editor-crop.svg" alt="Обрезать" class="post__button-editor post__button-editor--crop"></button>
                   <div class="post__range-filter-crop">
                     <div class="post__range-filter-crop__scale">
                     </div>
@@ -267,7 +269,7 @@
                   <hr class="post__line">
                 </li>
                 <li class="post__item">
-                  <button class="post__button-pouring"><img src="img/icon-editor-fill.svg" alt="Заливка" class="post__button-editor"></button>
+                  <button class="post__button-pouring"><img src="img/icon-editor-fill.svg" alt="Заливка" class="post__button-editor post__button-editor--pouring"></button>
                   <div class="post__range-filter-pouring">
                     <div class="post__range-filter-pouring__scale">
                     </div>
@@ -311,7 +313,7 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-  <a class="page-footer__link" href="index.html"><img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Пинк">
+  <a class="page-footer__link" href="index.html"><img class="page-footer__logo" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="Логотип Пинк">
   </a>
   <div class="page-footer__social social">
     <ul class="social__list">
@@ -327,7 +329,7 @@
     </ul>
   </div>
   <div class="page-footer__copyright copyright">
-    <p class="copyright__text">Разработано</p>
+    <p class="copyright__text copyright__text--photo">Разработано </p>
     <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
       <img class="copyright__img" src="img/htmlacademy.svg" width="42" height="42"></a>
   </div>

@@ -9,35 +9,37 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="page-header__wrapper page-header--nojs">
-    <div class="page-header__wrapper-border">
-    <div class="page-header__wrapper-image">
-      <a href="index.html" class="page-header__link">
-        <picture>
-          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Пинк">
-        </picture>
-        </a>
-  <button class="page-header__button page-header__button--closed" type="button"></button>
+  <div class="page-header__background">
+    <div class="page-header__wrapper page-header--nojs">
+      <div class="page-header__wrapper-border">
+        <div class="page-header__wrapper-image">
+          <a href="index.html" class="page-header__link">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Пинк">
+            </picture>
+          </a>
+          <button class="page-header__button page-header__button--closed" type="button"></button>
+        </div>
+      </div>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--competition">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--academy" href="htmlacademy.html">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    </div>
-  <nav class="main-nav main-nav--opened main-nav--nojs">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--competition">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="htmlacademy.html">Html Academy</a>
-        </li>
-      </ul>
-  </nav>
   </div>
   <div  class="competition">
     <p class="competition__text">
@@ -51,7 +53,8 @@
     <div class="conditions-competition__wrapper">
     <p class="conditions-competition__text">
       Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
-      <p class="conditions-competition__text-form">Пожалуйста, заполните форму ниже:</p>
+      <span class="conditions-competition__text-form">Пожалуйста, заполните форму ниже:</span>
+    </p>
     </div>
   </div>
   <div class="form">
@@ -108,21 +111,31 @@
         </div>
       </div>
     </div>
-    <div class="user-data user-data--contacts">
-      <div class="user-data__wrapper-contacts">
-        <p class="user-data__contacts">Контактная информация</p>
-        <div class="user-data__wrapper-contacts-info">
-      <p class="user-data__text user-data__text--contacts">
-        <label for="phone" class="user-data__contacts-info">Номер телефона</label>
-        <input class="user-data__placeholder user-data__placeholder--contacts" id="phone" type="text" name="phone" value="" placeholder="Номер, пожалуйста">
-      </p>
-      <p class="user-data__text user-data__text--contacts">
-        <label for="mail" class="user-data__contacts-info">Адрес почты</label>
-        <input class="user-data__placeholder user-data__placeholder--contacts" id="mail" type="text" name="mail" value="" placeholder="Введите почту *">
-      </p>
+      <div class="user-data user-data--contacts">
+        <div class="user-data__wrapper-contacts">
+          <p class="user-data__contacts">Контактная информация</p>
+          <div class="user-data__wrapper-contacts-info">
+            <div class="user-data__wrapper-phone">
+              <p class="user-data__text user-data__text--contacts">
+                <label for="phone" class="user-data__contacts-info">Номер телефона</label>
+                <input class="user-data__placeholder user-data__placeholder--contacts" id="phone" type="text" name="phone" value="" placeholder="Номер, пожалуйста">
+              <div class="user-data__phone">
+                <img class="user-data__phone-img" src="img/icon-phone.svg">
+              </div>
+              </p>
+            </div>
+            <div class="user-data__wrapper-mail">
+              <p class="user-data__text user-data__text--contacts">
+                <label for="mail" class="user-data__contacts-info">Адрес почты</label>
+                <input class="user-data__placeholder user-data__placeholder--contacts" id="mail" type="text" name="mail" value="" placeholder="Введите почту *">
+              <div class="user-data__mail">
+                <img class="user-data__mail-img" src="img/icon-mail.svg">
+              </div>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
     <div class="app-platforms">
       <div class="app-platforms__wrapper">
       <p class="app-platforms__text">С каким приложением путешествовали?</p>

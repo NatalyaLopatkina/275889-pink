@@ -85,6 +85,14 @@
   border: 2px solid @pink;
 }
 
+.user-data__phone {
+  display: none;
+}
+
+.user-data__mail {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .user-data__placeholder {
     display: inline;
@@ -176,6 +184,29 @@
     letter-spacing: 0.3px;
     padding-left: 17px;
   }
+
+  .user-data__wrapper-phone,
+  .user-data__wrapper-mail {
+    position: relative;
+  }
+
+  .user-data__phone {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 59px;
+    background: @border-grey;
+    padding: 20px 22px;
+  }
+
+  .user-data__mail {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 61px;
+    background: @border-grey;
+    padding: 22px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -197,22 +228,23 @@
   .user-data__wrapper-contacts {
     width: 936px;
     margin: 0 auto;
-    margin-top: -2px;
+    margin-top: -3px;
     padding-bottom: 0;
   }
 
   .user-data__contacts-info {
     margin: 0;
-    padding-left: 12px;
+    padding-left: 20px;
     margin-top: -19px;
   }
 
   .user-data__text--contacts {
-    margin-top: 11px;
+    margin-top: 12px;
+    margin-bottom: -2px;
   }
 
   .user-data--contacts {
-    margin-bottom: 12px;
+    margin-bottom: 19px;
   }
 
   .user-data__wrapper-contacts-info {
@@ -224,6 +256,20 @@
 
   .user-data__placeholder--contacts {
     width: 349px;
-    padding-left: 23px;
+    padding-left: 17px;
+  }
+
+  .user-data__phone {
+    top: 28px;
+    right: -5px;
+  }
+
+  .user-data__mail {
+    top: 28px;
+    right: -3px;
+  }
+
+  .user-data__wrapper-mail {
+    margin-right: 5px;
   }
 }
